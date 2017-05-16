@@ -1,7 +1,5 @@
 <p>The Mix Slider is a plugin developed by <a href="http://missra.com/" target="_blank">Missra</a>. I don't own this codes, I'm only hosting them here to be able to use the plugin on Tumblr.</p>
 
-<hr>
-
 <ul>
 <li><b>The official website of the Mix Slider → http://mixslider.missra.com/</b></li>
 <li><b>Get the full Mix Slider plugin on the official GitHub → https://github.com/xmissra/mixslider</b></li>
