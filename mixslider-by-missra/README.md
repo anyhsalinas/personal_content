@@ -2,7 +2,7 @@
 
 <ul>
 <li><b>The official website of the Mix Slider → http://mixslider.missra.com/</b></li>
-<li><b>Get the full Mix Slider plugin on the official GitHub → https://github.com/xmissra/mixslider</b></li>
+<li><b>Get the full Mix Slider plugin on its official GitHub → https://github.com/xmissra/mixslider</b></li>
 <li><b>The original developer website → http://missra.com/</b></li>
 </ul>
 
