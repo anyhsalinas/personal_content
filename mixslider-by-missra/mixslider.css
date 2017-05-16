@@ -1,0 +1,120 @@
+.mixslider {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+
+.mixslider-wrap {
+    position: relative
+}
+
+.mixslider-wrap.mixslider-carousel>li {
+    float: left
+}
+
+.mixslider-vertical>ul {
+    height: 100%
+}
+
+.mixslider-vertical li {
+    float: none;
+    width: 100%
+}
+
+.mixslider-fade {
+    position: relative
+}
+
+.mixslider-fade .mixslider-wrap li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 8
+}
+
+.mixslider-fade .mixslider-wrap li.mixslider-active {
+    z-index: 10
+}
+
+.mixslider li,
+.mixslider ol,
+.mixslider ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: none
+}
+
+.mixslider-arrow {
+    position: absolute;
+    top: 50%;
+    right: auto;
+    left: auto;
+    display: block;
+    width: 32px;
+    height: 32px;
+    z-index: 2;
+    cursor: pointer;
+    margin-top: -16px;
+    background: rgba(0, 0, 0, .2) no-repeat 50% 50%;
+    background-size: 7px 11px;
+    border-radius: 32px;
+    text-indent: -999em;
+    opacity: .6;
+    transition: opacity .2s;
+    overflow: hidden;
+}
+
+.mixslider-arrow:hover {
+    opacity: 1;
+}
+
+.mixslider-arrow.prev {
+    left: 30px;
+    right: auto;
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.mixslider-arrow.next {
+    left: auto;
+    right: 30px
+}
+
+.mixslider-nav {
+    position: absolute;
+    top: auto;
+    bottom: 35px;
+    left: 0;
+    right: 0;
+    margin: 0;
+}
+
+.mixslider-nav ol {
+    list-style: none;
+    text-align: center;
+}
+
+.mixslider-nav ol li {
+    display: inline-block;
+    float: none;
+    width: 3px;
+    height: 3px;
+    margin: 0 5px;
+    padding: 2px;
+    background: transparent;
+    border-radius: 7px;
+    overflow: hidden;
+    text-indent: -999em;
+    border: 2px solid #555;
+    cursor: pointer;
+    opacity: .4;
+}
+
+.mixslider-nav ol li.mixslider-active {
+    background: rgba(0,0,0,.1);
+    cursor: default;
+    opacity: 1;
+}
