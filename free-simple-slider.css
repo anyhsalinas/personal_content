@@ -25,7 +25,8 @@
 .free-simple-slider li img {
     visibility: hidden;
 }
-.free-simple-slider .current {
+.free-simple-slider 
+{
     display: block;
 }
 .free-simple-slider .slider-box.slide-animation,
@@ -91,15 +92,9 @@
 }
 
 .free-simple-slider .slider-dots li {
-    height: 15px;
-    width: 15px;
-    display: block;
-    background-color: rgba(255, 255, 255, 0.7);
-    border: 1px solid #ccc;
     display: inline-block;
     margin: 0 10px;
     position: static;
-    border-radius: 50%;
 }
 
 .free-simple-slider .slider-dots li:hover {
@@ -107,8 +102,7 @@
     background-color: #fff;
 }
 .free-simple-slider .slider-dots li.current {
-    background-color: #000;
-    border: 1px solid #000;
+    display: inline-block;
 }
 
 .free-simple-slider .arrows {
