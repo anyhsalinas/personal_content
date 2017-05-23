@@ -99,7 +99,6 @@
 
 .free-simple-slider .slider-dots li:hover {
     cursor: pointer;
-    background-color: #fff;
 }
 .free-simple-slider .slider-dots li.current {
     display: inline-block;
@@ -109,9 +108,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 60px;
     z-index: 99999;
-    background: rgba(255, 255, 255, 0.6);
 }
 .free-simple-slider .arrows:hover {
     background: #fff;
