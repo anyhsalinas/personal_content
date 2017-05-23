@@ -1,0 +1,56 @@
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> <!-- a rolagem infinita não funciona sem esse aqui -->
+<!-- jquery -->
+
+<!-- masonry + rolagem infinita e outras coisas -->
+<script type="text/javascript" src="http://static.tumblr.com/me5sfsd/12Qlmj66n/script.js"></script>
+<!-- masonry + rolagem infinita e outras coisas -->
+
+<script type="text/javascript">
+$(window).ready(function(){
+
+/** align posts **/
+var $wall = $('#posts');
+$wall.imagesLoaded(function(){
+$wall.masonry({
+itemSelector: '.caixa',
+isAnimated : true
+});
+});
+/** align posts **/
+
+/** infinite scroll **/
+$wall.infinitescroll({
+navSelector : "div#navigation",
+nextSelector : "div#navigation a#nextPage",
+itemSelector : '.caixa',
+loadingImg : "",
+loadingText : " ",
+donetext : " ",
+extraScrollPx : 0,
+bufferPx : 10000,
+debug : false,
+errorCallback: function() {
+$('#infscr-loading').animate({opacity: .8},2000).fadeOut('normal');
+}},
+function( newElements ) {
+var $newElems = $( newElements );
+
+/** make like button works **/
+var $newElemsIDs = $newElems.map(function(){ 
+    return this.id; 
+}).get();
+console.log($newElems, $newElemsIDs);
+Tumblr.LikeButton.get_status_by_post_ids($newElemsIDs);
+/** make like button works **/
+
+$newElems.hide();
+$newElems.imagesLoaded(function(){
+$wall.masonry( 'appended', $newElems, {isAnimated: true, animationOptions: {duration: 250, easing: 'linear', queue: false}}, function(){$newElems.fadeIn('slow');} );
+});
+}); $('#posts').show(500);
+/** infinite scroll **/
+
+});
+</script>
