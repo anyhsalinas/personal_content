@@ -53,7 +53,7 @@ $(document).ready(function () {
 
                 // ==== ADD ARROWS ==== 
                 if (settings.arrows === true) {
-                    self.after('<a class="arrows prev-arrow" href="#">Prev.</a><a class="arrows next-arrow" href="#">Next.</a>');
+                    self.after('<a class="arrows prev-arrow" href="#">' + settings.prevButton + '</a><a class="arrows next-arrow" href="#">' + settings.nextButton + '</a>');
                 }
                 // ==== ADD DOTS ====
                 if (settings.dots === true) {
