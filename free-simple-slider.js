@@ -70,6 +70,23 @@ $(document).ready(function () {
                     var imgUrl = $(this).attr('src');
                     $(this).parents('li').css('background-image', 'url(' + imgUrl + ')');
                 });
+                
+                
+                // allowing links
+                self.children('li').find('img').each(function(){
+                    if ($(this).parent('a').attr('href') != undefined) {
+                        var linkURL = $(this).parent('a').attr('href');
+                        var linkTarget = $(this).parent('a').attr('target');
+                        $(this).parents('li').css({"cursor":"pointer"});
+                        $(this).parents('li').click(function(){
+                            if(linkTarget == "_blank") {
+                                window.open(linkURL);
+                            } else {
+                                location.assign(linkURL);
+                            };
+                        });
+                    };
+                });
 
 
 
