@@ -1,0 +1,125 @@
+﻿<!------ POSTS ------>
+{block:Posts}
+
+
+<!--TEXTOS-->
+{block:Text}
+{block:Title}{Title}{/block:Title}
+{Body}
+{/block:Text}
+<!--TEXTOS-->
+
+
+<!--FOTOS-->
+{block:Photo}
+{LinkOpenTag}<img src="{PhotoURL-500}" />{LinkCloseTag}
+{block:Caption}{Caption}{/block:Caption}
+{/block:Photo}
+<!--FOTOS-->
+
+
+<!--PHOTOSETS-->
+{block:Photoset}
+{Photoset-500}
+{block:Caption}{Caption}{/block:Caption}
+{/block:Photoset}
+<!--PHOTOSETS-->
+
+
+<!--VIDEOS-->
+{block:Video}
+{Video-500}
+{block:Caption}{Caption}{/block:Caption}
+{/block:Video}
+<!--VIDEOS-->
+
+
+<!--AUDIOS-->
+{block:Audio}
+{block:ExternalAudio}(<a href="{ExternalAudioURL}">download!</a>){/block:ExternalAudio}
+{AudioPlayerWhite}
+{block:Caption}{Caption}{/block:Caption}
+{/block:Audio}
+<!--AUDIOS-->
+
+
+<!--CITAÇÕES-->
+{block:Quote}“{Quote}”
+{block:Source}&mdash; {Source}{/block:Source}
+{/block:Quote}
+<!--CITAÇÕES-->
+
+
+<!--DIÁLOGOS-->
+{block:Chat}
+{block:Title}{Title}{/block:Title}
+<table>
+{block:Lines}
+<tr>
+{block:Label}<td>{Label}</td>{block:Label}
+<td>{Line}</td>
+</tr>
+{/block:Lines}
+</table>
+{/block:Chat}
+<!--DIÁLOGOS-->
+
+
+<!--LINKS-->
+{block:Link}
+<a href="{URL}">{Name}</a>
+{block:Description}{Description}{/block:Description}
+{/block:Link}
+<!--LINKS-->
+
+
+<!--ASK-->
+{block:Answer}
+<a href="{AskerURL}" target="_blank" title="{AskerName}"><img src="{AskerPortraitURL-64}" /></a>
+{Asker} pergunta: {Question}
+Resposta: {Answer}
+{/block:Answer}
+<!--ASK-->
+
+
+<!------ NOTAS ------>
+{block:Date}
+
+Postado dia {DayOfMonth}.{MonthNumberWithZero}.{Year} às {24Hour}:{Minutes}, com {NoteCount} notas
+
+<a href="{ReblogURL}">Reblogar!</a>
+<a href="{Permalink}">Link Permanente!</a>
+
+{block:RebloggedFrom}
+Via <a href="{ReblogParentURL}" target="_blank">{ReblogParentName}</a>
+por <a href="{ReblogRootURL}" target="_blank">{ReblogRootName}</a>
+{/block:RebloggedFrom}
+
+{block:ContentSource}
+Fonte: <a href="{SourceURL}" target="_blank">{SourceTitle}</a>
+{/block:ContentSource}
+
+
+<!-- LINK PERMANENTE -->
+{block:PermalinkPage}
+
+{block:HasTags}
+{block:Tags}
+# <a href="{TagURL}">{Tag}</a>
+{/block:Tags}
+{/block:HasTags}
+
+{block:PostNotes}
+{PostNotes}
+{/block:PostNotes}
+
+{/block:PermalinkPage}
+<!-- LINK PERMANENTE -->
+
+
+{/block:Date}
+<!------ NOTAS ------>
+
+
+{/block:Posts}
+<!------ POSTS ------>
