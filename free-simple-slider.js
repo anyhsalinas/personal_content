@@ -66,7 +66,7 @@ $(document).ready(function () {
                 }
 
                 // ==== img src attribute change to background ====
-                self.children('li').children('img').each(function () {
+                self.children('li').find('img').each(function () {
                     var imgUrl = $(this).attr('src');
                     $(this).parents('li').css('background-image', 'url(' + imgUrl + ')');
                 });
