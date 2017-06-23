@@ -1,0 +1,40 @@
+﻿<!----- NIVO SLIDER SCRIPTS COMEÇA ----->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://static.tumblr.com/ifqwhnb/GBsm20q7d/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript">
+var $nv4wp = jQuery.noConflict();
+$nv4wp(window).ready(function() {
+$nv4wp('#slider').nivoSlider({
+
+effect:'random',
+slices:15, // For slice animations
+boxCols: 10, // For box animations
+boxRows: 6, // For box animations
+animSpeed:300, // Slide transition speed
+pauseTime:4000, // How long each slide will show
+startSlide:0, // Set starting Slide (0 index)
+directionNav:true, //Next & Prev
+directionNavHide:true, //Only show on hover
+controlNav:true, // 1,2,3... navigation
+controlNavThumbs:true, // Use thumbnails for Control Nav
+controlNavThumbsFromRel:false, // Use image rel for thumbs
+controlNavThumbsSearch: '.jpg', // Replace this with...
+controlNavThumbsReplace: '_thumb.jpg', // ...this in thumb Image src
+keyboardNav:true, //Use left & right arrows
+pauseOnHover:false, //Stop animation while hovering
+manualAdvance:false, //Force manual transitions
+captionOpacity:1, //Universal caption opacity
+prevText: '←', // Prev directionNav text
+nextText: '→', // Next directionNav text
+beforeChange: function(){}, // Triggers before a slide transition
+afterChange: function(){}, // Triggers after a slide transition
+slideshowEnd: function(){}, // Triggers after all slides have been shown
+lastSlide: function(){}, // Triggers when last slide is shown
+afterLoad: function(){} // Triggers when slider has loaded
+
+	});
+
+});
+
+</script>
+<!----- NIVO SLIDER SCRIPTS TERMINA ----->

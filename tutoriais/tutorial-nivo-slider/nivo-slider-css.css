@@ -1,0 +1,44 @@
+﻿/** NIVO SLIDER CSS COMEÇA **/
+#slide {height: auto; position: relative; overflow: hidden;
+    width: 500px; /** aqui vc define o tamanho do slider **/
+}
+/* The Nivo Slider styles */ 
+#slider {position: relative; overflow: hidden;} 
+#slider img {position:absolute; top:0px; left:0px; display:none; opacity: .3;
+    width: 500px; /** aqui vc define o tamanho do slider de novo **/
+} 
+#slider a {border:0; display:block;} 
+.nivoSlider {position:relative;} 
+.nivoSlider img {position:absolute; top:0px; left:0px; } 
+/* If an image is wrapped in a link */ 
+.nivoSlider a.nivo-imageLink {position:absolute; top:0px; left:0px; border:0; padding:0;margin:0; z-index:6; display:none; } 
+/* The slices and boxes in the Slider */ 
+.nivo-slice {display:block;position:absolute;z-index:5;height:100%; } 
+.nivo-box {display:block;position:absolute;z-index:5; } 
+/* Caption styles */ 
+.nivo-caption {position:absolute;left:0px; bottom:0px; background: #000; color: #fff; width: 100%; z-index:50; padding: 10px 0; font-family: Georgia; cursor: default;} 
+.nivo-caption p {padding:0 20px;margin:0;font-size:14px;} 
+.nivo-caption a {display:inline !important;} 
+.nivo-html-caption {display:none;} 
+/* Direction nav styles (e.g. Next & Prev) */ 
+.nivo-directionNav a {position:absolute;top:45%;z-index:99;cursor:pointer; padding: 5px;} 
+.nivo-prevNav {left:0px;}
+.nivo-nextNav {right:0px;} 
+.nivo-directionNav a {display: block; font-size: 20px; background: rgba(0,0,0,.5); padding: 5px 10px; box-shadow: 1px 1px 1px black; line-height: 30px; transition: .5s;} 
+.nivo-directionNav a:hover {background: #000; color: #fff;}
+a.nivo-nextNav {right:15px;} 
+a.nivo-prevNav {left:15px;}
+.nivo-caption a {color:#efe9d1; text-decoration: underline;}
+/*============================*/ 
+/*=== Custom Slider Styles ===*/ 
+/*============================*/ 
+.slider {} 
+.slider img {position:absolute;top:0px;left:0px;display:none;} 
+.slider a {border:0;display:block;} 
+
+.nivo-controlNav {transition: .5s; opacity: 0; position: absolute; bottom: 40px; text-align: center; text-align: center; font-family: Georgia, serif; z-index: 9; width: 100%;}
+.nivo-controlNav a {transition: .5s; cursor: pointer; background: #000; width: 14px; height: 14px; text-shadow: 1px 1px 0px black; box-shadow: 1px 1px 1px black; margin: 5px; border-radius: 100%; display: inline-block !important;}
+.nivo-controlNav a:hover {background: #fff;}
+#slide:hover .nivo-controlNav {opacity: 1;}
+
+/** NIVO SLIDER CSS TERMINA **/
