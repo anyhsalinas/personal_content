@@ -8,8 +8,7 @@
 <!-- masonry + rolagem infinita e outras coisas -->
 
 <script type="text/javascript">
-$(window).ready(function(){
-
+$(window).load(function(){
 /** align posts **/
 var $wall = $('#posts');
 $wall.imagesLoaded(function(){
