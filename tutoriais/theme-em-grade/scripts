@@ -9,6 +9,7 @@
 
 <script type="text/javascript">
 $(window).load(function(){
+
 /** align posts **/
 var $wall = $('#posts');
 $wall.imagesLoaded(function(){
