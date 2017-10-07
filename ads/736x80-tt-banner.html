@@ -11,7 +11,7 @@
 $(window).ready(function(){
     
     /** centralizando imagens **/
-    $(".gallery a").each(function(){
+    $(".gallery figure").each(function(){
        var imgUrl = $(this).find("img").attr("src");
        $(this).find("img").css({"display":"none"});
        $(this).css({"background-image":"url('" + imgUrl + "')", "background-size":"cover", "background-position":"center"});
@@ -42,8 +42,8 @@ figure {margin: 0px;}
 
 .gallery {display: table; position: relative; width: 100%; margin: 0px; padding: 0px;}
 
-.gallery img {width: 40px; height: 40px; display: inline-block; margin-right: 10px; font-family: Arial; color: #fff; text-decoration: none; font-size: 11px; text-align: center; position: relative; transition: .5s; overflow: hidden;}
-.gallery img:last-child {margin-right: 0px;}
+.gallery figure {width: 40px; height: 40px; display: inline-block; color: #fff; text-decoration: none; position: relative; transition: .5s; overflow: hidden;}
+.gallery img {width: 100%; height: auto;}
 
 .gallery .logo {height: 80px; width: 90px; padding: 0px 5px 0px 5px; background: white; margin: 0px;}
 .gallery .logo img {height: 100%; width: auto;}
@@ -60,27 +60,27 @@ figure {margin: 0px;}
 <div class="gallery" id="gallery-1-html">
 
 <!-- 1 -->
-<img src="https://img.tomtop.com/product/xy/377/377/p/gu1/P/U/PZ0051G-EU/PZ0051G-EU-1-1d8d-rFeJ.jpg"/>
+<figure><img src="https://img.tomtop.com/product/xy/377/377/p/gu1/P/U/PZ0051G-EU/PZ0051G-EU-1-1d8d-rFeJ.jpg"/></figure>
 <!-- 2 -->
-<img src="https://img.tomtop.com/product/xy/377/377/p/gu1/R/U/RM7139EU/RM7139EU-1-cadd-b0um.jpg"/>
+<figure><img src="https://img.tomtop.com/product/xy/377/377/p/gu1/R/U/RM7139EU/RM7139EU-1-cadd-b0um.jpg"/></figure>
 <!-- 3 -->
-<img src=""/>
+<figure><img src=""/></figure>
 <!-- 4 -->
-<img src="https://img.tomtop.com/product/xy/168/168/p/gu1/G/G/G1837G/G1837G-1-d0dd-8b0S.jpg"/>
+<figure><img src="https://img.tomtop.com/product/xy/168/168/p/gu1/G/G/G1837G/G1837G-1-d0dd-8b0S.jpg"/></figure>
 <!-- 5 -->
-<img src="https://img.tomtop.com/product/xy/377/377/p/gu1/P/U/PZ0074B-EU/PZ0074B-EU-1-bdd6-3Cmr.jpg"/>
+<figure><img src="https://img.tomtop.com/product/xy/377/377/p/gu1/P/U/PZ0074B-EU/PZ0074B-EU-1-bdd6-3Cmr.jpg"/></figure>
 <!-- 6 -->
-<img src=""/>
+<figure><img src=""/></figure>
 <!-- 7 -->
-<img src="https://img.tomtop.com/product/xy/377/377/p/gu1/tomtopsite/R/RM7920US/RM7920US-14942321836034.jpg"/>
+<figure><img src="https://img.tomtop.com/product/xy/377/377/p/gu1/tomtopsite/R/RM7920US/RM7920US-14942321836034.jpg"/></figure>
 <!-- 8 -->
-<img src="https://img.tomtop.com/product/xy/377/377/p/gu1/J/J0405RB/J0405RB-8-b775.jpg"/>
+<figure><img src="https://img.tomtop.com/product/xy/377/377/p/gu1/J/J0405RB/J0405RB-8-b775.jpg"/></figure>
 <!-- 9 -->
-<img src=""/>
+<figure><img src=""/></figure>
 <!-- 10 -->
-<img src="https://img.tomtop.com/product/xy/377/377/p/gu1/V/V1267B/V1267B-17-a513.jpg"/>
+<figure><img src="https://img.tomtop.com/product/xy/377/377/p/gu1/V/V1267B/V1267B-17-a513.jpg"/></figure>
 <!-- 11 -->
-<img src=""/>
+<figure><img src=""/></figure>
     
    
 
