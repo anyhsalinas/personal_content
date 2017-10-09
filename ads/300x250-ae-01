@@ -1,0 +1,100 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>x</title>
+
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- jquery -->
+
+<script>
+$(window).ready(function(){
+    
+    /** centralizando imagens **/
+    $(".gallery a").each(function(){
+       var imgUrl = $(this).find("img").attr("src");
+       $(this).find("img").css({"display":"none"});
+       $(this).css({"background-image":"url('" + imgUrl + "')", "background-size":"cover", "background-position":"center"});
+    });
+    /** centralizando imagens **/
+
+    
+    /** make all links open in new window **/
+    $("a").each(function(){
+        $(this).attr("target","_blank");
+    });
+    /** make all links open in new window **/
+    
+    
+});
+</script>
+
+<style>
+
+body {margin: 0px; background: #000; color: white;}
+
+.tmblr-iframe {display: none;}
+
+figure {margin: 0px;}
+
+
+
+
+.gallery {width: 300px; height: 250px; display: table; position: relative; margin: 0px; padding: 0px;}
+
+.gallery a {width: auto; height: 115px; width: 90px; display: inline-block; margin: 5px; font-family: Arial; color: #fff; text-decoration: none; font-size: 11px; text-align: center; position: relative; transition: .5s; overflow: hidden;}
+
+.gallery a img {height: 100%; transition: .5s;}
+.gallery a:hover img {opacity: .5;}
+
+.gallery a span {position: absolute; bottom: -100px; left: 0px; padding: 5px; background: rgba(0,0,0,.6); transition: .5s;}
+.gallery a:hover span {bottom: 0px;}
+
+.gallery b {background: rgba(255,153,0,1); color: #fff; display: block; position: absolute; top: 0px; right: 0px; padding: 2px; font-size: 11px;}
+.gallery b sub {display: block; font-weight: normal; font-size: 8px; text-align: right;}
+
+.gallery .logo {height: 80px; width: auto; padding: 0px 5px 0px 5px; background: white; margin: 0px;}
+.gallery .logo img {width: 90px; height: auto; margin-top: 18px;}
+
+.gallery .logo:hover {opacity: 1;}
+
+
+</style>
+</head>
+<body id="body">
+
+
+
+<div class="gallery" id="gallery-1-html">
+
+<!-- 1 --><a href="# target="_blank">
+<img src="#"/>
+<span>#</span>
+</a>
+<!-- 2 --><a href="# target="_blank">
+<img src="#"/>
+<span>#</span>
+</a>
+<!-- 3 --><a href="# target="_blank">
+<img src="#"/>
+<span>#</span>
+</a>
+<!-- 4 --><a href="# target="_blank">
+<img src="#"/>
+<span>#</span>
+</a>
+<!-- 5 --><a href="# target="_blank">
+<img src="#"/>
+<span>#</span>
+</a>
+<!-- 6 --><a href="# target="_blank">
+<img src="#"/>
+<span>#</span>
+</a>
+
+</div><!-- #gallery -->
+
+
+
+</body>
+</html>
