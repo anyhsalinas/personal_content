@@ -1,0 +1,94 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>x</title>
+
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- jquery -->
+
+
+<script>
+$(window).ready(function(){
+    
+    /** centralizando imagens **/
+    $(".gallery a").each(function(){
+       var imgUrl = $(this).find("img").attr("src");
+       $(this).find("img").css({"display":"none"});
+       $(this).css({"background-image":"url('" + imgUrl + "')", "background-size":"cover", "background-position":"center"});
+    });
+    /** centralizando imagens **/
+    
+});
+</script>
+
+<style>
+
+body {margin: 0px; background: #000; width: 80px; height: 736px;}
+
+.tmblr-iframe {display: none;}
+
+figure {margin: 0px;}
+
+
+
+
+.gallery {display: table; position: relative; width: 100%; margin: 0px; padding: 0px;}
+
+.gallery a {width: auto; height: 80px; width: 80px; display: inline-block; margin-bottom: 10px; font-family: Arial; color: #fff; text-decoration: none; font-size: 11px; text-align: center; position: relative; transition: .5s; overflow: hidden;}
+.gallery a:last-child {margin-right: 0px;}
+
+.gallery a img {height: 100%; transition: .5s;}
+.gallery a:hover img {opacity: .5;}
+
+.gallery a span {position: absolute; bottom: -100px; left: 0px; padding: 5px; background: rgba(0,0,0,.6); transition: .5s;}
+.gallery a:hover span {bottom: 0px;}
+
+.gallery b {background: rgba(255,153,0,1); color: #fff; display: block; position: absolute; top: 0px; right: 0px; padding: 2px; font-size: 11px;}
+.gallery b sub {display: block; font-weight: normal; font-size: 8px; text-align: right;}
+
+.gallery .logo {height: 80px; width: auto; padding: 0px 5px 0px 5px; background: white; margin: 0px;}
+.gallery .logo img {width: 90px; height: auto; margin-top: 18px;}
+
+.gallery .logo:hover {opacity: 1;}
+
+
+</style>
+</head>
+<body id="body">
+
+
+
+<div class="gallery" id="gallery-1-html">
+
+<!-- 1 --><a href="https://www.aliexpress.com/item/Gdgydh-2017-new-spring-autumn-casual-high-heeled-shoes-sexy-ruslana-korshunova-thick-heels-platform-pumps/32821173771.html" target="_blank">
+<img src="https://ae01.alicdn.com/kf/HTB1Cg.nSpXXXXXqXXXX760XFXXXo.png"/>
+<span>Gdgydh new spring autumn high-heeled shoes...</span>
+</a>
+<!-- 2 --><a href="https://www.aliexpress.com/item/Baharcelin-3XL-4XL-Vestidos-Big-Size-Summer-Dress-Short-Sleeve-Women-Girl-Dress-polka-Dot-Slim/32814924230.html" target="_blank">
+<img src="https://ae01.alicdn.com/kf/HTB1bZ8DRFXXXXawXVXXq6xXFXXXR.jpg?size=79138&height=586&width=776&hash=5093eccae3088e6e9233c1aab468d854"/>
+<span>Baharcelin 3XL 4XL Big Size Summer Dress...</span>
+</a>
+<!-- 3 --><a href="https://www.aliexpress.com/item/Women-Fashion-Long-Sleeve-T-shirt-Irregular-Hem-Long-Top-Sexy-Loose-Shirts/32821304833.html" target="_blank">
+<img src="https://ae01.alicdn.com/kf/HTB1bNQRSXXXXXclaXXXq6xXFXXXK.jpg"/>
+<span>Women Fashion Long Sleeve T-shirt Irregular Hem...</span>
+</a>
+<!-- 4 --><a href="https://www.aliexpress.com/item/Summer-Style-Boho-People-hippie-Asymmetrical-embroidery-Sheer-lace-slip-dresses-double-layered-with-ruffled-trimming/32345134007.html" target="_blank">
+<img src="https://68.media.tumblr.com/f3f894df2e51653a98b5c68537964308/tumblr_owsdeuOosa1uiiolxo1_r1_500.jpg"/>
+<span>Jastie Boho People hippie Style Asymmetrical embroidery...</span>
+</a>
+<!-- 5 --><a href="https://www.aliexpress.com/item/Hot-selling-2015-new-summer-fashion-high-platform-sandals-women-casual-ladies-shoes-China-Black-and/32311704626.html" target="_blank">
+<img src="https://68.media.tumblr.com/5a2b868b9684142fd5e7397fb7a621eb/tumblr_owsd25GlMb1uiiolxo1_540.jpg"/>
+<span>Gdgydh Hot Selling New Summer Fashion High Platform...</span>
+</a>
+<!-- 6 --><a href="https://www.aliexpress.com/item/Women-Punk-Gothic-Goth-Mini-Short-Dress-Net-Yarn-Splicing-Back-Hollow-Out-Lace-Up-Tie/32812230207.html" target="_blank">
+<img src="https://68.media.tumblr.com/208dea30b3f7fe95f4004f16b88b1a88/tumblr_owsdeuOosa1uiiolxo1_400.jpg"/>
+<span>Women Punk Gothic Goth Mini Short Dress Net...</span>
+</a>
+
+</div><!-- #gallery -->
+
+
+
+</body>
+</html>
