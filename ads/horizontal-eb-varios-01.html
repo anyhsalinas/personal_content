@@ -12,7 +12,7 @@ $(window).ready(function(){
     
     /** centralizando imagens **/
     $(".gallery a").each(function(){
-       var imgUrl = $(this).find("img").attr("src");
+       var imgUrl = $(this).find("figure img").attr("src");
        $(this).find("img").css({"display":"none"});
        $(this).css({"background-image":"url('" + imgUrl + "')", "background-size":"cover", "background-position":"center"});
     });
