@@ -1,0 +1,160 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>x</title>
+
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- jquery -->
+
+<script>
+$(window).ready(function(){
+    
+    /** centralizando imagens **/
+    $(".gallery a").each(function(){
+       var imgUrl = $(this).find("img").attr("src");
+       $(this).find("img").css({"display":"none"});
+       $(this).css({"background-image":"url('" + imgUrl + "')", "background-size":"cover", "background-position":"center"});
+    });
+    /** centralizando imagens **/
+
+    
+    /** make all links open in new window **/
+    $("a").each(function(){
+        $(this).attr("target","_blank");
+    });
+    /** make all links open in new window **/
+    
+    
+});
+</script>
+
+<style>
+
+body {margin: 0px; background: #000; height: 80px; width: 736px;}
+figure {margin: 0px; }
+
+.tmblr-iframe {display: none;}
+    
+
+.gallery {display: table; position: relative; width: 100%; margin: 0px; padding: 0px;}
+
+.gallery a {width: 80px; height: 80px; display: inline-block; margin-left: 10px; font-family: Arial; color: #fff; text-decoration: none; font-size: 11px; text-align: center; position: relative; transition: .5s; overflow: hidden;}
+
+.gallery a img {height: 100%; transition: .5s;}
+.gallery a:hover img {opacity: .5;}
+
+.gallery a span {position: absolute; bottom: -100px; left: 0px; padding: 5px; background: rgba(0,0,0,.6); transition: .5s;}
+.gallery a:hover span {bottom: 0px;}
+
+.gallery b {background: rgba(255,153,0,1); color: #fff; display: block; position: absolute; top: 0px; right: 0px; padding: 2px; font-size: 11px;}
+.gallery b sub {display: block; font-weight: normal; font-size: 8px; text-align: right;}
+
+.gallery .logo {height: 80px; width: 90px; padding: 0px 2px 0px 2px; background: white; margin: 0px;}
+.gallery .logo img {width: 100%; height: auto;}
+.gallery .logo:hover {opacity: 1;}
+
+
+
+</style>
+</head>
+<body id="body">
+
+
+
+<div class="gallery" id="gallery-1-html">
+    
+<!-- logo -->
+<a href="http://www.tkqlhce.com/ml105hz74z6MVQPUUUPMOPSURVSR" target="_blank" class="logo">
+<img src="http://bycoutinho.com.br/wp-content/uploads/2016/10/ALI-EXPRESS-LOGO-1.png"/>
+</a>
+
+<!-------------------- LISTA 1 -------------------->
+<script type="text/javascript">
+$(function(){
+      var myQuotes = new Array(); 
+      myQuotes[0] = '<a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338087438&mpre=http%3A%2F%2Fwww.ebay.com%2Fitm%2FBlue-black-Lace-Satin-Formal-Evening-Prom-Dress-Ballgown-Womens-Long-Skirt%2F182396319581" target="_blank"> <figure><img src="http://i.ebayimg.com/images/g/GDIAAOSwI2dXFexJ/s-l1600.jpg"></figure> <span>Blue-black Lace Satin Formal Evening Prom Dress Ballgown Womens Long Skirt</span> </a>';
+      myQuotes[1] = '<a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338087438&mpre=http%3A%2F%2Fwww.ebay.com%2Fitm%2FWomen-Long-Formal-Prom-Dress-Cocktail-Party-Ball-Gown-Evening-Bridesmaid-Dress-%2F322238756288" target="_blank"> <figure><img src="http://i.ebayimg.com/images/g/lzsAAOSwaB5XvXKt/s-l1600.jpg"></figure> <span>Women Long Formal Prom Dress Cocktail Party Ball Gown Evening Bridesmaid Dress</span> </a>';
+      myQuotes[2] = '<a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338087438&mpre=http%3A%2F%2Fwww.ebay.com%2Fitm%2FFormal-Cocktail-Wedding-Bridesmaid-Evening-Dress-Blue-Long-Ball-Gown-chic-Prom%2F252774461527" target="_blank"> <figure><img src="https://i.ebayimg.com/images/g/Ti0AAOSwbYZXaPcc/s-l500.jpg"></figure> <span>Formal Cocktail Wedding Bridesmaid Evening Dress Blue Long Ball Gown chic Prom</span> </a>';
+      myQuotes[3] = '<a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338087438&mpre=http%3A%2F%2Fwww.ebay.com%2Fitm%2F381837898368" target="_blank"> <figure><img src="https://i.ebayimg.com/images/g/7vUAAOSwcLxYG-O3/s-l500.jpg"></figure> <span>Women Gothic Lace Up Punk Platform Chunky High Heel Round Toe Ankle Boots Shoes</span> </a>';
+      var myRandom = Math.floor(Math.random()*myQuotes.length); 
+      $('.lista-1 .produto-1').html(myQuotes[myRandom]);
+   });
+   
+$(function(){
+      var myQuotes = new Array(); 
+      myQuotes[0] = '<a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338087438&mpre=http%3A%2F%2Fwww.ebay.com%2Fitm%2F2017-Long-Black-Applique-Evening-Formal-Prom-Party-Cocktail-Dresses-Wedding-Gown%2F111887109195" target="_blank"> <figure><img src="https://i.ebayimg.com/images/g/jJYAAOSwFMZWqDak/s-l500.jpg"></figure> <span>2017 Long Black Applique Evening Formal Prom Party Cocktail Dresses Wedding Gown</span> </a>';
+      myQuotes[1] = '<a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338087438&mpre=http%3A%2F%2Fwww.ebay.com%2Fitm%2FStylish-Mens-Slim-Warm-Hooded-Sweatshirt-Hoodie-Coat-Jacket-Outwear-Sweater-New-%2F122061162315" target="_blank"> <figure><img src="http://i.ebayimg.com/images/g/HCQAAOSwopRYf34x/s-l1600.jpg"></figure> <span>Stylish Mens Slim Warm Hooded Sweatshirt Hoodie Coat Jacket Outwear Sweater New</span> </a>';
+      myQuotes[2] = '<a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338087438&mpre=http%3A%2F%2Fwww.ebay.com%2Fitm%2FDenim-Outwear-Womens-Hooded-Winter-Warm-Parka-Coat-Jacket-Fur-Collar-Overcoats%2F172576366668" target="_blank"> <figure><img src="http://i.ebayimg.com/images/g/ae0AAOSwWnFV~73Y/s-l1600.jpg"></figure> <span>Denim Outwear Womens Hooded Winter Warm Parka Coat Jacket Fur Collar Overcoats</span> </a>';
+      myQuotes[3] = '<a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338087438&mpre=http%3A%2F%2Fwww.ebay.com%2Fitm%2FWomens-Korean-Style-Fashion-Letter-Pattern-Casual-Loost-Windbreak-Coat-Jacket%2F172447025901" target="_blank"> <figure><img src="https://i.ebayimg.com/images/g/9E0AAOSwA3dYU1O7/s-l500.jpg"></figure> <span>Womens Korean Style Fashion Letter Pattern Casual Loost Windbreak Coat Jacket</span> </a>';
+      var myRandom = Math.floor(Math.random()*myQuotes.length); 
+      $('.lista-1 .produto-2').html(myQuotes[myRandom]);
+   });
+   
+$(function(){
+      var myQuotes = new Array(); 
+      myQuotes[0] = '<a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338087438&mpre=http%3A%2F%2Fwww.ebay.com%2Fitm%2FMens-Retro-high-top-Combat-boots-Winter-England-style-fashionable-short-shoes-%2F262583488275" target="_blank"> <figure><img src="http://i.ebayimg.com/images/g/8m4AAOSwaB5XtVbh/s-l1600.jpg"></figure> <span>Mens Retro high-top Combat boots Winter England style fashionable short shoes</span> </a>';
+      myQuotes[1] = '<a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338087438&mpre=http%3A%2F%2Fwww.ebay.com%2Fitm%2FMens-Ripped-Skinny-Runway-Straight-Slim-Elastic-Denim-Fit-Biker-Jeans-Pants%2F142171012291" target="_blank"> <figure><img src="https://i.ebayimg.com/images/g/098AAOSwal5YHbDT/s-l500.jpg"></figure> <span>Mens Ripped Skinny Runway Straight Slim Elastic Denim Fit Biker Jeans Pants</span> </a>';
+      myQuotes[2] = '<a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338087438&mpre=http%3A%2F%2Fwww.ebay.com%2Fitm%2FMens-winter-warm-lace-up-British-casual-ankle-boots-booties-shoes-New-Fashion%2F302124665488" target="_blank"> <figure><img src="http://i.ebayimg.com/images/g/sPwAAOSwXeJYFxEl/s-l1600.jpg"></figure> <span>Mens winter warm lace-up British casual ankle boots booties shoes New Fashion</span> </a>';
+      myQuotes[3] = '<a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338087438&mpre=http%3A%2F%2Fwww.ebay.com%2Fitm%2FMens-Slim-Skinny-Runway-Straight-Elastic-Destroyed-Ripped-Jeans-Denim-Pants%2F302321582208" target="_blank"> <figure><img src="http://i.ebayimg.com/images/g/dBkAAOSwcB5ZHrUj/s-l1600.jpg"></figure> <span>Mens Slim Skinny Runway Straight Elastic Destroyed Ripped Jeans Denim Pants</span> </a>';
+      var myRandom = Math.floor(Math.random()*myQuotes.length); 
+      $('.lista-1 .produto-3').html(myQuotes[myRandom]);
+   });
+   
+$(function(){
+      var myQuotes = new Array(); 
+      myQuotes[0] = '<a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338087438&mpre=http%3A%2F%2Fwww.ebay.com%2Fitm%2FZARA-AW16-COPPER-METALLIC-LEATHER-JACKET-COPPER-BIKER-Ref-2969-264-%2F182486930069" target="_blank"> <figure><img src="http://i.ebayimg.com/images/g/yHYAAOSwB-1YxaIY/s-l1600.jpg"></figure> <span>ZARA AW16 COPPER METALLIC LEATHER JACKET COPPER BIKER Ref. 2969/264</span> </a>';
+      myQuotes[1] = '<a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338087438&mpre=http%3A%2F%2Fwww.ebay.com%2Fitm%2Fbrand-new-short-lace-dress-prom-evening-party-cocktail-wedding-dresses%2F201823175064" target="_blank"> <figure><img src="http://i.ebayimg.com/images/g/DIkAAOSwx6pYp4iX/s-l1600.jpg"></figure> <span>Brand New Short Lace Dress Prom Evening Party Cocktail Wedding Dresses</span> </a>';
+      myQuotes[2] = '<a href="http://www.ebay.com/itm/Women-Long-Hooded-Coat-Cardigan-Plush-Fleece-Jacket-Warm-Autumn-Winter-Jacket-L/400779895015" target="_blank"> <figure><img src="https://i.ebayimg.com/images/g/GTQAAOSwnDZUJf6Z/s-l500.jpg"></figure> <span>Women Long Hooded Coat Cardigan Plush Fleece Jacket Warm Autumn Winter Jacket #L</span> </a>';
+      myQuotes[3] = '<a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338087438&mpre=http%3A%2F%2Fwww.ebay.com%2Fitm%2FWomen-Long-Hooded-Coat-Cardigan-Plush-Fleece-Jacket-Warm-Autumn-Winter-Jacket-L%2F400779895015" target="_blank"> <figure><img src="https://i.ebayimg.com/images/g/wN4AAOSw1BlZR5W-/s-l500.png"></figure> <span>Womens & Mens Classic canvas shoes Korean couple Flats Lace Up Casual Shoes</span> </a>';
+      var myRandom = Math.floor(Math.random()*myQuotes.length); 
+      $('.lista-1 .produto-4').html(myQuotes[myRandom]);
+   });
+   
+$(function(){
+      var myQuotes = new Array(); 
+      myQuotes[0] = '<a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338087438&mpre=http%3A%2F%2Fwww.ebay.com%2Fitm%2FNew-Mens-Slim-collar-jackets-fashion-jacket-Tops-Casual-coat-outerwear%2F291838583210" target="_blank"> <figure><img src="http://i.ebayimg.com/images/g/ZxEAAOSwaB5XpW4J/s-l1600.jpg"></figure> <span>New Mens Slim collar jackets fashion jacket Tops Casual coat outerwear</span> </a>';
+      myQuotes[1] = '<a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338087438&mpre=http%3A%2F%2Fwww.ebay.com%2Fitm%2FWomens-lady-Wedding-Dress-Lace-Ball-Gown-Cocktail-Party-Bridal-Formal-Evening%2F182231340809" target="_blank"> <figure><img src="https://i.ebayimg.com/images/g/dggAAOSwxYxUvxdI/s-l500.jpg"></figure> <span>Womens lady Wedding Dress Lace Ball Gown Cocktail Party Bridal Formal Evening</span> </a>';
+      myQuotes[2] = '<a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338087438&mpre=http%3A%2F%2Fwww.ebay.com%2Fitm%2FStylish-Mens-Slim-Warm-Hooded-Sweatshirt-Hoodie-Coat-Jacket-Outwear-Sweater-HOT-%2F142122465664" target="_blank"> <figure><img src="http://i.ebayimg.com/images/g/ITYAAOSwAuZX36QF/s-l1600.jpg"></figure> <span>Stylish Mens Slim Warm Hooded Sweatshirt Hoodie Coat Jacket Outwear Sweater HOT</span> </a>';
+      myQuotes[3] = '<a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338087438&mpre=http%3A%2F%2Fwww.ebay.com%2Fitm%2FMens-Hoodie-Hooded-Coat-Outwear-Sweater-Cotton-Pullover-Sweatshirt-Jumper-Hoody-%2F352095734475" target="_blank"> <figure><img src="http://i.ebayimg.com/images/g/jtMAAOSwyWZZTNu6/s-l1600.jpg"></figure> <span>Mens Hoodie Hooded Coat Outwear Sweater Cotton Pullover Sweatshirt Jumper Hoody</span> </a>';
+      var myRandom = Math.floor(Math.random()*myQuotes.length); 
+      $('.lista-1 .produto-5').html(myQuotes[myRandom]);
+   });
+
+$(function(){
+      var myQuotes = new Array(); 
+      myQuotes[0] = '<a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338087438&mpre=http%3A%2F%2Fwww.ebay.com%2Fitm%2FTop-Fashion-New-Mens-Stretch-Slim-Fit-Biker-Jeans-Motorcycle-Skinny-Jeans-Pants%2F361313930080" target="_blank"> <figure><img src="https://i.ebayimg.com/images/g/G-oAAOSwstxVcV-q/s-l500.jpg"></figure> <span>Top Fashion New Mens Stretch Slim Fit Biker Jeans Motorcycle Skinny Jeans Pants</span> </a>';
+      myQuotes[1] = '<a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338087438&mpre=http%3A%2F%2Fwww.ebay.com%2Fitm%2FNew-Mens-Skinny-Denim-Gradient-Color-Skinny-Jeans-Slim-Fit-Pants-Trousers-Size%2F222177223313" target="_blank"> <figure><img src="https://i.ebayimg.com/images/g/f5sAAOSwRQlXe3z~/s-l500.jpg"></figure> <span>New Mens Skinny Denim Gradient Color Skinny Jeans Slim Fit Pants Trousers Size</span> </a>';
+      myQuotes[2] = '<a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338087438&mpre=http%3A%2F%2Fwww.ebay.com%2Fitm%2FStylish-Mens-Casual-Slim-Fit-One-Button-Suit-Blazer-Coat-Jacket-Tops-%2F252384686587" target="_blank"> <figure><img src="http://i.ebayimg.com/images/g/zC0AAOSwBLlVaTJ2/s-l1600.jpg"></figure> <span>Stylish Mens Casual Slim Fit One Button Suit Blazer Coat Jacket Tops</span> </a>';
+      myQuotes[3] = '<a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338087438&mpre=http%3A%2F%2Fwww.ebay.com%2Fitm%2FNew-Fashion-Retro-Korean-Women-Oversize-Denim-Jeans-Jacket-Boyfriend-Style-Coat%2F332255015484" target="_blank"> <figure><img src="https://i.ebayimg.com/images/g/YGwAAOSw3gJZOBMK/s-l500.jpg"></figure> <span>New Fashion Retro Korean Women Oversize Denim Jeans Jacket Boyfriend Style Coat</span> </a>';
+      var myRandom = Math.floor(Math.random()*myQuotes.length); 
+      $('.lista-1 .produto-6').html(myQuotes[myRandom]);
+   });
+   
+$(function(){
+      var myQuotes = new Array(); 
+      myQuotes[0] = '<a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338087438&mpre=http%3A%2F%2Fwww.ebay.com%2Fitm%2Fwomen-floral-chiffon-kimono-boho-cardigan-blouse-tops-loose-shawl-casual-jacket%2F162064811908" target="_blank"> <figure><img src="http://i.ebayimg.com/images/g/zQ8AAOSwZQxW2STx/s-l1600.jpg"></figure> <span>Women Floral Chiffon Kimono Boho Cardigan Blouse Tops Loose Shawl Casual Jacket</span> </a>';
+      myQuotes[1] = '<a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338087438&mpre=http%3A%2F%2Fwww.ebay.com%2Fitm%2FWomens-Lace-Leather-Soft-Sport-Stretch-Fitness-Jogging-Leggings-Pencil-Gym-Pants-%2F151940589781" target="_blank"> <figure><img src="http://i.ebayimg.com/images/g/J1UAAOSwI-BWMcTX/s-l1600.jpg"></figure> <span>Womens Lace Leather Soft Sport Stretch Fitness Jogging Leggings Pencil Gym Pants</span> </a>';
+      myQuotes[2] = '<a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338087438&mpre=http%3A%2F%2Fwww.ebay.com%2Fitm%2FSummer-Women-Blouse-Floral-Short-Sleeve-Ladies-Chiffon-Loose-Casual-T-shirt-Tops%2F371941954022" target="_blank"> <figure><img src="http://i.ebayimg.com/images/g/GYEAAOSww9xZDh5v/s-l1600.jpg"></figure> <span>Summer Women Blouse Floral Short Sleeve Ladies Chiffon Loose Casual T-shirt Tops</span> </a>';
+      myQuotes[3] = '<a href="https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338087438&mpre=http%3A%2F%2Fwww.ebay.com%2Fitm%2FPlus-Fashion-Women-Long-Sleeve-Loose-Casual-Tops-Blouse-T-Shirt-Short-Mini-Dress-%2F362017573824" target="_blank"> <figure><img src="http://i.ebayimg.com/images/g/c28AAOSwd~RZTNp8/s-l1600.jpg"></figure> <span>Plus Fashion Women Long Sleeve Loose Casual Tops Blouse T Shirt Short Mini Dress</span> </a>';
+      var myRandom = Math.floor(Math.random()*myQuotes.length); 
+      $('.lista-1 .produto-7').html(myQuotes[myRandom]);
+   });
+</script>
+
+<ul class="lista-1">
+<li> <span class="produto-1"></span> </li>
+<li> <span class="produto-2"></span> </li>
+<li> <span class="produto-3"></span> </li>
+<li> <span class="produto-4"></span> </li>
+<li> <span class="produto-5"></span> </li>
+<li> <span class="produto-6"></span> </li>
+<li> <span class="produto-7"></span> </li>
+</ul><!-- .lista-1 -->
+
+</div><!-- #gallery -->
+
+
+
+</body>
+</html>
