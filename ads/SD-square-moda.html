@@ -1,0 +1,52 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>x</title>
+
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- jquery -->
+
+<script>
+$(window).ready(function(){
+    
+    /** randomize **/
+    var myQuotes = new Array();
+    myQuotes[0] = '<!-- CF: SammyDress --> <iframe src="http://alt-wear.tumblr.com/banners/SD/square-01" frameborder="0" scrolling="no"></iframe>';
+    myQuotes[1] = '<!-- CF: SammyDress --> <iframe src="http://alt-wear.tumblr.com/banners/SD/square-02" frameborder="0" scrolling="no"></iframe>';
+    myQuotes[2] = '<!-- CF: SammyDress --> <iframe src="http://alt-wear.tumblr.com/banners/SD/square-03" frameborder="0" scrolling="no"></iframe>';
+    myQuotes[3] = '<!-- CF: SammyDress --> <iframe src="http://alt-wear.tumblr.com/banners/SD/square-04" frameborder="0" scrolling="no"></iframe>';
+    var myRandom = Math.floor(Math.random()*myQuotes.length); 
+    $('.ads-posts-banner').html(myQuotes[myRandom]);
+/** randomize **/
+    
+    /** make all links open in new window **/
+    $("a").each(function(){
+        $(this).attr("target","_blank");
+    });
+    /** make all links open in new window **/
+    
+});
+</script>
+
+<style>
+
+body {margin: 0px; background: #000;}
+
+.tmblr-iframe {display: none;}
+
+img, iframe {width: 300px; height: 250px; position: relative; z-index: 99999;}
+
+
+</style>
+</head>
+<body id="body">
+
+
+
+<div class="ads-posts-banner" id="posts-banner"></div>
+
+
+
+</body>
+</html>
