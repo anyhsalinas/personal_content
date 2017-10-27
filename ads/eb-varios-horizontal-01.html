@@ -31,29 +31,27 @@ $(window).ready(function(){
 
 <style>
 
-body {margin: 0px; background: #000; height: 80px; width: 736px;}
-figure {margin: 0px; }
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- jquery -->
 
+
+<style>
+body {margin: 0px; background: #000; height: 60px; width: 736px;}
+figure {margin: 0px; }
 .tmblr-iframe {display: none;}
     
-
 .gallery {display: table; position: relative; width: 100%; margin: 0px; padding: 0px;}
-
-.gallery a {width: 80px; height: 80px; display: inline-block; margin-left: 10px; font-family: Arial; color: #fff; text-decoration: none; font-size: 11px; text-align: center; position: relative; transition: .5s; overflow: hidden;}
-
-.gallery a img {height: 100%; transition: .5s;}
-.gallery a:hover img {opacity: .5;}
-
+.gallery a {width: 60px; height: 60px; display: inline-block; margin-right: 5px; font-family: Arial; color: #fff; text-decoration: none; font-size: 11px; text-align: center; position: relative; transition: .5s; overflow: hidden;}
+.gallery a figure {height: 100%; width: 100%; transition: .5s; background-size: cover; background-position: center;}
+.gallery a:hover figure {opacity: .5;}
 .gallery a span {position: absolute; bottom: -100px; left: 0px; padding: 5px; background: rgba(0,0,0,.6); transition: .5s;}
 .gallery a:hover span {bottom: 0px;}
-
 .gallery b {background: rgba(255,153,0,1); color: #fff; display: block; position: absolute; top: 0px; right: 0px; padding: 2px; font-size: 11px;}
 .gallery b sub {display: block; font-weight: normal; font-size: 8px; text-align: right;}
-
-.gallery .logo {height: 80px; width: 90px; padding: 0px 2px 0px 2px; background: white; margin: 0px;}
+.gallery .logo {height: 55px; width: 70px; padding: 5px 2px 0px 2px; background: white; margin: 0px;}
 .gallery .logo img {width: 100%; height: auto;}
-.gallery .logo:hover {opacity: 1;}
-
+.gallery .logo:hover {opacity: .7;}
 
 
 </style>
