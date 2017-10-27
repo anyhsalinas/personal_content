@@ -1,0 +1,111 @@
+﻿<!DOCTYPE>
+<html>
+<head>
+<title>x</title>
+
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- jquery -->
+
+
+<style>
+
+body {margin: 0px; background: #000; height: 736px; width: 80px;}
+figure {margin: 0px; }
+
+.tmblr-iframe {display: none;}
+    
+
+.gallery {display: table; position: relative; width: 100%; margin: 0px; padding: 0px;}
+
+.gallery a {height: 100px; width: 80px; display: inline-block; margin-bottom: 10px; font-family: Arial; color: #fff; text-decoration: none; font-size: 11px; text-align: center; position: relative; transition: .5s; overflow: hidden;}
+
+.gallery a figure {height: 100%; width: 100%; transition: .5s; background-size: cover; background-position: center;}
+.gallery a:hover figure {opacity: .5;}
+
+.gallery a span {position: absolute; bottom: -100px; left: 0px; padding: 5px; background: rgba(0,0,0,.6); transition: .5s;}
+.gallery a:hover span {bottom: 0px;}
+
+.gallery b {background: rgba(255,153,0,1); color: #fff; display: block; position: absolute; top: 0px; right: 0px; padding: 2px; font-size: 11px;}
+.gallery b sub {display: block; font-weight: normal; font-size: 8px; text-align: right;}
+
+.gallery .logo {height: 80px; width: 90px; padding: 0px 2px 0px 2px; background: white; margin: 0px;}
+.gallery .logo img {width: 100%; height: auto;}
+.gallery .logo:hover {opacity: 1;}
+
+
+
+</style>
+
+<script>
+$(window).ready(function(){
+
+/** Random products **/	
+$(function(){
+      var myQuotes = new Array(); 
+      myQuotes[0] = '<a href="https://t.cfjump.com/49189/t/30467?Url=https%3a%2f%2fwww.sammydress.com%2fproduct3623314.html" target="_blank"> <figure style="background-image: url(https://gloimg.samcdn.com/S/pdm-product-pic/Clothing/2017/09/11/source-img/20170911105444_81517.jpg)"></figure> <span>Halloween Lace Up Layered Handkerchief Dress</span> </a>';
+	  myQuotes[1] = '<a href="https://t.cfjump.com/49189/t/30467?Url=https%3a%2f%2fwww.sammydress.com%2fproduct3518252.html%3fseid%3drMvO13hOh8dQ16jGKbOUU6vMhK" target="_blank"> <figure style="background-image: url(https://gloimg.samcdn.com/S/pdm-product-pic/Clothing/2017/06/27/source-img/20170627091236_67331.jpg)"></figure> <span>Fringe Asymmetric Slip Dress</span> </a>';
+	  myQuotes[2] = '<a href="https://t.cfjump.com/49189/t/30467?Url=https%3a%2f%2fwww.sammydress.com%2fproduct3626814.html" target="_blank"> <figure style="background-image: url(https://gloimg.samcdn.com/S/pdm-product-pic/Clothing/2017/09/12/source-img/20170912173423_28996.jpg)"></figure> <span>Long Sleeve Lace Insert Ruched Maxi Dress</span> </a>';
+	  myQuotes[3] = '<a href="https://t.cfjump.com/49189/t/30467?Url=https%3a%2f%2fwww.sammydress.com%2fproduct3666736.html" target="_blank"> <figure style="background-image: url(https://gloimg.samcdn.com/S/pdm-product-pic/Clothing/2017/10/07/source-img/20171007205337_64477.jpg)"></figure> <span>Cold Shoulder Bodycon Mini Sweater Dress</span> </a>';
+      var myRandom = Math.floor(Math.random()*myQuotes.length); 
+      $('.gallery .produto-1').html(myQuotes[myRandom]);
+});
+
+$(function(){
+      var myQuotes = new Array(); 
+      myQuotes[0] = '<a href="https://t.cfjump.com/49189/t/30467?Url=https%3a%2f%2fwww.sammydress.com%2fproduct3675452.html%3fseid%3d34nvdId1S1Cf1CpS8pnUKGfQp0" target="_blank"> <figure style="background-image: url(https://gloimg.samcdn.com/S/pdm-product-pic/Clothing/2017/10/12/source-img/20171012150124_33990.jpg)"></figure> <span>3 Pieces PU Leather Backpack Set</span> </a>';
+	  myQuotes[1] = '<a href="https://t.cfjump.com/49189/t/30467?Url=https%3a%2f%2fwww.sammydress.com%2fproduct3638599.html%3fseid%3d495GOCChKt73Khn8MfO1f417rK" target="_blank"> <figure style="background-image: url(https://gloimg.samcdn.com/S/pdm-product-pic/Clothing/2017/09/19/source-img/20170919163107_70884.jpg)"></figure> <span>Steel Boned Brocade Corset Top</span> </a>';
+	  myQuotes[2] = '<a href="https://t.cfjump.com/49189/t/30467?Url=https%3a%2f%2fwww.sammydress.com%2fproduct3443292.html%3fseid%3dMtEpOlQ4Mvnt1ACv4Sn6CtnUI0" target="_blank"> <figure style="background-image: url(https://gloimg.samcdn.com/S/pdm-product-pic/Clothing/2017/05/05/source-img/20170505182855_71890.jpg)"></figure> <span>Underbust Strapless PU Lace Up Corset</span> </a>';
+	  myQuotes[3] = '<a href="https://t.cfjump.com/49189/t/30467?Url=https%3a%2f%2fwww.sammydress.com%2fproduct3468688.html%3fseid%3d1S3O4CnK8dEl8Uhphj2MQQjIKK" target="_blank"> <figure style="background-image: url(https://gloimg.samcdn.com/S/pdm-product-pic/Clothing/2016/01/19/source-img/20160119134511_65516.jpg)"></figure> <span>Stylish Black High-Waisted Folding Flounce Ruffles Womens Skirt</span> </a>';
+      var myRandom = Math.floor(Math.random()*myQuotes.length); 
+      $('.gallery .produto-2').html(myQuotes[myRandom]);
+});
+
+$(function(){
+      var myQuotes = new Array(); 
+      myQuotes[0] = '<a href="https://t.cfjump.com/49189/t/30467?Url=https%3a%2f%2fwww.sammydress.com%2fproduct3613934.html%3fseid%3dv5O22h8vfM85SUphpAU7Ajtvr4" target="_blank"> <figure style="background-image: url(https://gloimg.samcdn.com/S/pdm-product-pic/Clothing/2017/09/05/source-img/20170905145348_18627.jpg)"></figure> <span>Long Middle Part Shaggy Water Wave Synthetic Party Wig</span> </a>';
+	  myQuotes[1] = '<a href="https://t.cfjump.com/49189/t/30467?Url=https%3a%2f%2fwww.sammydress.com%2fproduct3616296.html%3fseid%3dGEKndE62M2MQQMlvfd2Ib3vAUS" target="_blank"> <figure style="background-image: url(https://gloimg.samcdn.com/S/pdm-product-pic/Clothing/2017/09/06/source-img/20170906164917_67586.jpg)"></figure> <span>Long Side Parting Shaggy Layered Wavy Colormix Party Synthetic Wig</span> </a>';
+	  myQuotes[2] = '<a href="https://t.cfjump.com/49189/t/30467?Url=https%3a%2f%2fwww.sammydress.com%2fproduct3672822.html%3fseid%3djf96rhhK7dh6179pMrnUGQ805S" target="_blank"> <figure style="background-image: url(https://gloimg.samcdn.com/S/pdm-product-pic/Clothing/2017/10/11/source-img/20171011165333_84297.jpg)"></figure> <span>Medium Side Bang Ombre Water Wave Party Cosplay Synthetic Wig</span> </a>';
+	  myQuotes[3] = '<a href="https://t.cfjump.com/49189/t/30467?Url=https%3a%2f%2fwww.sammydress.com%2fproduct3659012.html" target="_blank"> <figure style="background-image: url(https://gloimg.samcdn.com/S/pdm-product-pic/Clothing/2017/10/05/source-img/20171005181039_93419.jpg)"></figure> <span>Lace Up Hooded High Low Dress</span> </a>';
+      var myRandom = Math.floor(Math.random()*myQuotes.length); 
+      $('.gallery .produto-3').html(myQuotes[myRandom]);
+});
+
+$(function(){
+      var myQuotes = new Array(); 
+      myQuotes[0] = '<a href="#" target="_blank"> <figure style="background-image: url(####)"></figure> <span>...</span> </a>';
+	  myQuotes[1] = '<a href="#" target="_blank"> <figure style="background-image: url(####)"></figure> <span>...</span> </a>';
+	  myQuotes[2] = '<a href="#" target="_blank"> <figure style="background-image: url(####)"></figure> <span>...</span> </a>';
+	  myQuotes[3] = '<a href="#" target="_blank"> <figure style="background-image: url(####)"></figure> <span>...</span> </a>';
+      var myRandom = Math.floor(Math.random()*myQuotes.length); 
+      $('.gallery .produto-4').html(myQuotes[myRandom]);
+});
+
+$(function(){
+      var myQuotes = new Array(); 
+      myQuotes[0] = '<a href="https://t.cfjump.com/49189/t/30467?Url=https%3a%2f%2fwww.sammydress.com%2fproduct3067140.html%3fseid%3dQn22OOG88j0nvQjSnb9COKCKKO" target="_blank"> <figure style="background-image: url(https://gloimg.samcdn.com/S/pdm-product-pic/Clothing/2016/10/04/source-img/20161004172956_31700.jpg)"></figure> <span>Crochet Lace Rose Strand Bracelet</span> </a>';
+	  myQuotes[1] = '<a href="https://t.cfjump.com/49189/t/30467?Url=https%3a%2f%2fwww.sammydress.com%2fproduct3422754.html" target="_blank"> <figure style="background-image: url(https://gloimg.samcdn.com/S/pdm-product-pic/Clothing/2017/04/13/source-img/20170413143805_76576.jpg)"></figure> <span>Faux Turquoise Arrow Hollow Out Bracelet</span> </a>';
+	  myQuotes[2] = '<a href="https://t.cfjump.com/49189/t/30467?Url=https%3a%2f%2fwww.sammydress.com%2fproduct3648731.html%3fseid%3dbK07UUGfjvA18v7AMEE2lv6EtC" target="_blank"> <figure style="background-image: url(https://gloimg.samcdn.com/S/pdm-provider-img/straight-product-img/20170917/T010023/T0100230042/source-img/083523-9018.jpg)"></figure> <span>Ladies Floral Long Sleeve Sweatshirt</span> </a>';
+	  myQuotes[3] = '<a href="https://t.cfjump.com/49189/t/30467?Url=https%3a%2f%2fwww.sammydress.com%2fproduct3600701.html%3fseid%3ddvlMfCA7EIbGh8K7IE7IfvQlK4" target="_blank"> <figure style="background-image: url(https://gloimg.samcdn.com/S/pdm-product-pic/Clothing/2017/08/28/source-img/20170828170837_74698.jpg)"></figure> <span>Drop Shoulder Funny Hoodie</span> </a>';
+      var myRandom = Math.floor(Math.random()*myQuotes.length); 
+      $('.gallery .produto-5').html(myQuotes[myRandom]);
+});
+
+});
+</script>
+
+</head>
+<body id="body">
+
+
+<div class="gallery">
+<span class="produto-1"></span>
+<span class="produto-2"></span>
+<span class="produto-3"></span>
+<span class="produto-4"></span>
+<span class="produto-5"></span>
+</div><!-- .gallery -->
+
+
+</body>
+</html>
