@@ -45,10 +45,10 @@
         left: 0%;
 }
 .free-simple-slider .slider-box.slide-animation li.prev {
-    z-index: 998;
+    z-index: 98;
 }
 .free-simple-slider .slider-box.slide-animation li.current {
-    z-index: 999;
+    z-index: 99;
 }
 
 
@@ -69,10 +69,10 @@
 }
 
 .free-simple-slider .slider-box.slide-fade li.prev {
-    z-index: 998;
+    z-index: 98;
 }
 .free-simple-slider .slider-box.slide-fade li.current {
-    z-index: 999;
+    z-index: 99;
 }
 
 
