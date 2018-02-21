@@ -63,7 +63,10 @@ $(window).ready(function(){
     
     $("body, #ads").css({"background-image":"url("+rand_path+")","background-size":"100% auto","background-position":"left bottom"});
     /** random backgrounds **/
-    
+	
+    /** fade in **/
+    $("#all").animate({opacity: 1}, 900);
+    /** fade in **/
     
     	/******* alterar idioma *******/
     var langua = navigator.language;
@@ -172,11 +175,6 @@ $(window).ready(function(){
         $(".popup").css({"display":"none"});
     });
     /** aplicar filtros **/
-    
-    
-    /** fade in **/
-    $("#all").animate({opacity: 1}, 900);
-    /** fade in **/
 
 });
 </script>
@@ -588,6 +586,7 @@ header #desc {
 </style>
 </head>
 <body>
+<div id="all">
 
 
 <!---- ALTERAR CORES ---->
