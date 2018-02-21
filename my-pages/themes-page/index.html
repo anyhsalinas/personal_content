@@ -69,25 +69,28 @@ $(window).ready(function(){
 	
     /******* alterar idioma *******/
     var langua = navigator.language;
-    if(langua == "pt-BR" || langua == "pt-PT") {
-        $(".l_pt").show();
-		$(".l_en").hide();
-    } else {
-        $(".l_en").show();
-		$(".l_pt").hide();
-    }
-    
-	$("#l_en").click(function(){
-		$(".l_pt").hide();
-		$(".l_en").show();
-		return false;
-	});
-	
-	$("#l_pt").click(function(){
-		$(".l_en").hide();
-		$(".l_pt").show();
-		return false;
-	});
+    function translate() {
+        if(langua == "pt-BR" || langua == "pt-PT") {
+            $(".l_pt").show();
+    		$(".l_en").hide();
+        } else {
+            $(".l_en").show();
+    		$(".l_pt").hide();
+        }
+        
+    	$("#l_en").click(function(){
+    		$(".l_pt").hide();
+    		$(".l_en").show();
+    		return false;
+    	});
+    	
+    	$("#l_pt").click(function(){
+    		$(".l_en").hide();
+    		$(".l_pt").show();
+    		return false;
+    	});
+    };
+    translate();
 	/******* alterar idioma *******/
 	
 	
@@ -135,12 +138,14 @@ $(window).ready(function(){
 	$("#bot-themes").click(function(){
 	    $("#centro").load("https://anyhsalinas.github.io/personal_content/my-pages/themes-page/themes.html #conteudo");
 	    scrolldown();
+	    translate();
 		return false;
 	});
 	
 	$("#bot-pages").click(function(){
 	    $("#centro").load("https://anyhsalinas.github.io/personal_content/my-pages/themes-page/pages.html #conteudo");
 	    scrolldown();
+	    translate();
 		return false;
 	});
 	/** carregar materiais **/
@@ -385,12 +390,12 @@ header #desc {
 #menu2 a {
     display: inline-block;
     border-right: 1px solid #222;
-    padding: 20px;
     color: #ccc;
     font-family: 'Unica One', sans-serif;
     text-transform: uppercase;
     font-size: 20px;
     line-height: 50px;
+    padding: 20px 40px;
     transition: .5s;
     letter-spacing: 1px;
 }
