@@ -619,7 +619,7 @@ header #desc {
 #pagetutorial .box {
     width: 500px;
     margin: 0px auto;
-    margin-top: 140px;
+    margin-top: 120px;
     background: #000;
     border: 1px solid #222;
     padding: 20px;
@@ -729,10 +729,10 @@ header #desc {
 
 
 <!---- COOKIES MESSAGE ---->
-<div id="cookiesmessage">
+<div id="cookiesmessage" style="display: none;">
 <span class="l_pt">Esta página utiliza cookies.</span>
 <span class="l_en">This page uses cookies.</span>
-<a href="#"> <i class="lnr lnr-cross"></i> </a>
+<a href="#" onclick="document.getElementById('cookiesmessage').style.display = 'none'; returnfalse;"> <i class="lnr lnr-cross"></i> </a>
 </div><!-- #cookiesmessage -->
 <!---- COOKIES MESSAGE ---->
 
