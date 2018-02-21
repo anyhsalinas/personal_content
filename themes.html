@@ -1,0 +1,982 @@
+<!--
+ 
+			THEMES PAGE (exclusively for anyhs-themes.tumblr.com)
+			by Anyh Salinas - © 2018
+			www.anyhs-themes.tumblr.com
+ 
+ 
+   ♦ Don't copy;
+   ♦ Don't take parts of this code;
+   ♦ If you want something you saw in this theme, ask me, don't steal it;
+   ♦ This theme was exclusively to anyhs-themes.tumblr.com, it's not available for anyone else.
+
+     
+  
+   CONTACT:
+   http://www.anyhs-themes.tumblr.com/contato
+ 
+ 
+-->
+<!DOCTYPE>
+<html>
+<head>
+
+    <title>Anyh's Resources</title>
+    <link rel="shortcut icon" href="https://api.tumblr.com/v2/blog/anyhs-themes.tumblr.com/avatar/16/"/>
+    
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- jquery -->
+
+<!-- qtip -->
+<script type="text/javascript" src="http://static.tumblr.com/tiu5k68/xTkm8wqw2/tumblr-title-qtip.js"></script>
+<!-- qtip -->
+
+<!-- smooth scroll -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.6/SmoothScroll.js"></script>
+<!-- smooth scroll -->
+	
+<!-- icons -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+<!-- icons -->
+
+<!-- fonts -->
+<link href='https://fonts.googleapis.com/css?family=Unica One|Roboto Condensed|Rouge Script|Vidaloka' rel='stylesheet' type='text/css'>
+<!-- fonts -->
+
+
+
+<script>
+$(window).ready(function(){
+
+        /** random backgrounds **/
+    var image_array = new Array();
+        image_array[0] = "https://raw.githubusercontent.com/anyhsalinas/personal_content/master/background-images/anyhs-themes_bg-jellys-1.jpg";
+        image_array[1] = "https://raw.githubusercontent.com/anyhsalinas/personal_content/master/background-images/anyhs-themes_bg-forest.jpg";
+        image_array[2] = "https://raw.githubusercontent.com/anyhsalinas/personal_content/master/background-images/anyhs-themes_bg-waterfall.jpg";
+        image_array[3] = "https://raw.githubusercontent.com/anyhsalinas/personal_content/master/background-images/anyhs-themes_bg-flowers-2.jpg";
+        image_array[4] = "https://raw.githubusercontent.com/anyhsalinas/personal_content/master/background-images/anyhs-themes_bg-waves-2.jpg";
+ 
+    var rand_path = image_array[Math.floor(Math.random() * image_array.length)];
+    
+    $("body, #ads").css({"background-image":"url("+rand_path+")","background-size":"100% auto","background-position":"left bottom"});
+    /** random backgrounds **/
+    
+	
+	/** fade in **/
+    $("#all").animate({opacity: 1}, 900);
+    /** fade in **/
+    
+	
+    /******* alterar idioma *******/
+    var langua = navigator.language;
+    function translate() {
+        if(langua == "pt-BR" || langua == "pt-PT") {
+            $(".l_pt").show();
+    		$(".l_en").hide();
+        } else {
+            $(".l_en").show();
+    		$(".l_pt").hide();
+        };
+    };
+    translate();
+    
+    	$("#l_en").click(function(){
+    		$(".l_pt").hide();
+    		$(".l_en").show();
+    		return false;
+    	});
+    	
+    	$("#l_pt").click(function(){
+    		$(".l_en").hide();
+    		$(".l_pt").show();
+    		return false;
+    	});
+	/******* alterar idioma *******/
+	
+	
+	/** botao #cores **/
+	$("#cores").click(function(){
+	    $(this).find("i").toggleClass("fa-toggle-on");
+	    $("body").toggleClass("inverted");
+	    $("img, iframe").toggleClass("notinverted");
+	});
+	/** botao #cores **/
+	
+	/** botao #idioma **/
+	$("#idioma").mouseover(function(){
+	    $("#idioma nav").slideDown("slow");
+	});
+	$("#idioma").mouseleave(function(){
+	    $("#idioma nav").slideUp("slow");
+	});
+	/** botao #idioma **/
+	
+	
+    /***** scroll down & up *****/
+    var menu_location = $("#menu2").offset().top;
+    function scrolldown() {
+	$("body").animate({
+            scrollTop: menu_location
+        }, 1000);
+    };
+    $("#scroll_up").click(function(){
+        $("body").animate({
+            scrollTop: 0
+        }, 1000);
+    });
+    /***** scroll down & up *****/
+    
+    
+    
+    /***** open tutorial *****/
+    $(document).scroll(function(){
+        if($(document).scrollTop() >= menu_location) {
+            $("#pagetutorial").css({"visibility":"visible"});
+        }
+    });
+    
+    $("#fechartutorial").click(function(){
+        $("#pagetutorial").fadeOut(300);
+        return false;
+    });
+    $("#abrirtutorial a").click(function(){
+        $("#pagetutorial").fadeIn(300);
+        return false;
+    });
+    /***** open tutorial *****/
+    
+	
+	
+	/** carregar materiais **/
+	$("#centro").load("https://anyhsalinas.github.io/personal_content/my-pages/themes-page/themes.html #conteudo", function(){
+	    translate();
+	});
+	
+	$("#bot-themes").click(function(){
+	    $("#centro").load("https://anyhsalinas.github.io/personal_content/my-pages/themes-page/themes.html #conteudo", function(){
+	    translate();
+	});
+	    scrolldown();
+		return false;
+	});
+	
+	$("#bot-pages").click(function(){
+	    $("#centro").load("https://anyhsalinas.github.io/personal_content/my-pages/themes-page/pages.html #conteudo", function(){
+	    translate();
+	});
+	    scrolldown();
+		return false;
+	});
+	/** carregar materiais **/
+	
+	
+	
+	
+    /** FILTROS **/
+    var opcoes = $("#filtros ul li");
+    opcoes.find("span").before("<div class='custom_checkbox'></div>");
+    
+    opcoes.click(function() {
+        $(this).find(".custom_checkbox").toggleClass("checked");
+        
+    });
+    /** FILTROS **/
+    
+    /** aplicar filtros **/
+    $("#filtrar").click(function(){
+        opcoes.has(".checked").each(function(){
+            alert($(this).find(".checked").siblings(".l_pt").html());
+        });
+        
+        /** filtrando themes **/
+        $(".caixinha").hide();
+        /** filtrando themes **/
+        
+        $(".popup").css({"display":"none"});
+    });
+    /** aplicar filtros **/
+    
+    
+});
+</script>
+<style>
+
+body {
+	margin: 0px;
+	background: #000 fixed;
+	color: #777;
+	font-size: 14px;
+	font-family: 'Roboto Condensed', Arial;
+}
+	
+::-webkit-scrollbar {width: 5px; height: 5px; background: #000;}
+::-webkit-scrollbar-thumb:vertical {background: #8c7761;}
+::-webkit-scrollbar-thumb:horizontal {background: #8c7761;}
+	
+::selection {background: rgb(209,189,165); color: #000;}
+
+#qTip {margin: 0px 0 0 16px; text-align: left; display: none; position: absolute; z-index: 99999; font-size: 10px; font-family: 'Roboto Condensed'; padding: 5px 5px; line-height: 10px; color: rgb(209,189,165); background: #222; border: 1px solid rgb(209,189,165);}
+	
+#all {opacity: 0; background: rgba(5,5,5,.6);}
+
+a {text-decoration: none; transition: .5s; color: #8c7761;}
+a:hover {color: #aaa;}
+	
+h1, h2, h3, h4 {
+	font-weight: normal;
+	margin: 0px;
+	text-shadow: 1px 1px 1px black;
+	}
+
+ol, ul {margin: 0px; padding: 0px; list-style: inside;}
+
+
+
+header {
+	text-align: center;
+	padding: 0px 0px 0px 0px;
+}
+
+/******* ALTERAR IDIOMA e ALTERAR CORES *******/
+
+#cores, #idioma {
+	background: #000;
+	color: #fff;
+	padding: 10px;
+	font-size: 10px;
+	line-height: 12px;
+	position: absolute;
+	text-align: left;
+	z-index: 11;
+	border: 1px solid #222;
+	transition: .5s;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+}
+
+#cores i, #idioma i {
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+#cores {
+    top: 10px;
+	left: 140px;
+	cursor: pointer;
+}
+.inverted { filter: invert(1); -webkit-filter: invert(1); }
+.notinverted { filter: invert(1) !important; -webkit-filter: invert(1) !important; }
+
+
+#idioma {
+	top: 10px;
+	left: 10px;
+}
+#idioma nav {
+	margin-top: 10px;
+	display: none;
+}
+
+#idioma a {
+	display: block;
+	background: #111;
+	padding: 5px;
+	font-size: 10px;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+	margin-bottom: 1px;
+	}
+#idioma a:hover {
+	opacity: .7;
+	}
+#idioma img {
+	width: 12px;
+	height: 12px;
+	border-radius: 100%;
+	float: left;
+	margin-right: 5px;
+}
+/******* ALTERAR IDIOMA *******/
+
+
+
+/******* MENU BLOG *******/
+#menu_blog {font-size: 12px; font-family: 'Roboto'; text-transform: uppercase; letter-spacing: 1px; position: fixed; top: 0px; left: 0px; width: 100%; z-index: 999999; display: table;}
+#menu_blog a {color: #fff; background: rgba(40,40,40,.5); padding: 10px; border-radius: 3px; display: inline-block; margin: 0px 2px;}
+#menu_blog i {color: #fff; margin-right: 2px;}
+
+#menu_blog .left, #menu_blog .right {margin: 10px 10px;}
+#menu_blog .right {}
+/******* MENU BLOG *******/
+
+
+
+/******* MENU PRINCIPAL *******/
+header #menu {
+	position: relative;
+	z-index: 10;
+	display: table;
+	width: 100%;
+	background: #111;
+	border-bottom: 1px solid #222;
+	text-align: center;
+	font-size: 14px;
+}
+header #menu a {
+	transition: .5s;
+	display: inline-block;
+	color: rgb(209,189,165);
+	padding: 10px 35px;
+	margin: 10px 0px; 
+	font-family: 'Unica One', Roboto Condensed, sans-serif;
+	font-size: 14px;
+	letter-spacing: .5px;
+	color: #ccc;
+	text-transform: uppercase;
+	border-left: 1px solid #222;
+	text-shadow: -40px 0px 0px transparent, 40px 0px 0px transparent;
+	overflow: hidden;
+}
+header #menu a:first-child {
+	border-left: none;
+}
+header #menu a:hover {
+	text-shadow: 0px 0px 0px #aaa, 0px 0px 0px #aaa;
+	}
+/******* MENU PRINCIPAL *******/
+	
+header h1 {
+	margin-top: 160px;
+	font-size: 100px;
+	color: #ccc;
+	font-family: 'Rouge Script', Georgia, serif;
+}
+header h1 small {
+	font-size: 45px;
+	margin-left: -10px;
+}
+header #desc {
+	color: #ccc;
+	text-shadow: 1px 1px 1px black;
+}
+
+
+
+/** scroll down & up **/
+.scrollbuttons {
+    display: block;
+	background: #000;
+	border: 1px solid #222;
+	font-size: 13px;
+	line-height: 13px;
+	height: 10px; width: 12px;
+	padding: 12px 11px;
+	border-radius: 100%;
+	transition: .5s;
+	cursor: pointer;
+	color: #ccc;
+}
+.scrollbuttons:hover {
+    color: #555;
+}
+#scroll_up {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background: #111;
+}
+#scroll_up:hover {
+    transform: rotate(-360deg);
+}
+/** scroll down & up **/
+
+
+
+/*********************** MENU 2 começo *****/
+#menu2 {
+    width: 100%;
+    background: #000;
+    display: table;
+    text-align: center;
+    border: 1px solid #222;
+    border-left: 0px;
+    border-right: 0px;
+    margin-top: 100px;
+}
+#menu2 a {
+    display: inline-block;
+    border-right: 1px solid #222;
+    color: #ccc;
+    font-family: 'Unica One', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 50px;
+    padding: 20px 40px;
+    transition: .5s;
+    letter-spacing: 1px;
+}
+#menu2 a:last-child {border-right: none;}
+#menu2 a:hover {letter-spacing: 3px;}
+/*********************** MENU 2 fim *****/
+
+
+/*********************** CAIXAS começo *****/
+#caixas {
+    position: relative;
+    display: table;
+    width: 100%;
+    margin-top: 15px;
+}
+.caixa {
+    margin: 20px;
+    float: left;
+    text-align: center;
+}
+
+
+.caixa#esquerda {width: calc(100% - 40px - (660px + 40px) - (320px + 40px));}
+.caixa#centro {width: 660px;}
+.caixa#direita {width: 300px;}
+
+
+.caixa h1, .caixa h2 {
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    background: #111;
+    color: #aaa;
+    font-family: 'Unica One', sans-serif !important;
+	text-transform: uppercase;
+	padding: 20px 10px;
+    border: 1px solid #222;
+    margin-bottom: -1px;
+    letter-spacing: 1px;
+}
+.caixa h2 {font-size: 18px; line-height: 12px; margin-top: -1px;}
+
+.caixa .vitrine {
+    height: 440px;
+    padding: 20px;
+    overflow-y: scroll;
+    background: rgba(0,0,0,.7);
+    border: 1px solid #222;
+}
+.vitrine::-webkit-scrollbar {width: 7px; height: 7px; background: #222;}
+.vitrine::-webkit-scrollbar-thumb:vertical {background: #777; border-radius: 5px;}
+
+
+
+/*********************** TERMOS começo *****/
+
+.caixa ul {
+    list-style: none;
+    background: rgba(0,0,0,.7);
+    border: 1px solid #222;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.caixa ul li {
+    text-align: left;
+    font-size: 10px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #090909;
+    margin-bottom: 1px;
+}
+
+.caixa ul span {
+    display: table-cell;
+    padding: 10px;
+}
+.caixa ul i {
+    color: #aaa;
+    background: #111; 
+    font-size: 12px;
+    padding: 10px;
+    width: 12px; max-width: 12px; min-width: 12px;
+    margin-right: 10px;
+    display: table-cell;
+    vertical-align: middle;
+    border-right: 1px solid #000;
+}
+
+/*********************** TERMOS fim *****/
+
+
+
+
+
+/** caixinhas **/
+.caixinha {
+	width: 280px;
+	display: inline-block;
+	position: relative;
+	margin: 10px;
+	text-align: center;
+	background: #222;
+	border: 1px solid #222;
+}
+
+.caixinha h3 {
+	margin: 0px;
+	background: #000;
+	color: #aaa;
+	font-size: 19px;
+	line-height: 30px;
+	padding: 10px;
+	font-family: 'Unica One';
+	text-transform: uppercase;
+	margin-bottom: 1px;
+}
+.caixinha h3 a {
+    font-size: 18px;
+    display: block;
+}
+
+.caixinha .foto {
+	width: 100%;
+	height: 120px;
+	overflow: hidden;
+	position: relative;
+}
+.caixinha .foto img {
+	transition: .5s;
+	width: 100%;
+	opacity: .7;
+	filter: grayscale(50%);
+}
+.caixinha:hover .foto img {
+	transform: scale(1.5) rotate(-10deg);
+	filter: grayscale(0%);
+	opacity: 1;
+}
+.caixinha .foto span {
+	position: absolute;
+	right: -2px;
+	top: -4px;
+	z-index: 5;
+	background: rgb(54,42,28);
+	color: #aaa;
+	font-size: 10px;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+	padding: 5px 30px;
+	transform: rotate(45deg);
+	transform-origin: 60px 60px;
+	border: 1px solid #222;
+}
+
+.caixinha nav {
+	display: table;
+	width: 100%;
+	margin-top: 1px;
+	transition: .5s;
+}
+.caixinha nav a {
+	transition: .5s;
+	display: inline-block;
+	background: #000;
+	padding: 10px 5px;
+	width: calc(50% - 10.5px);
+	color: #aaa;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+}
+.caixinha nav a:hover {
+	letter-spacing: 2px;
+}
+.caixinha nav a:first-child {margin-right: 1px;}
+
+.caixinha nav i {
+	margin-right: 5px;
+}
+/** caixinhas **/
+
+/******************* CAIXAS fim ***/
+
+
+
+
+/*** TUTORIAL DA PÁGINA começo ***/
+#pagetutorial {
+    visibility: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 9999999;
+    width: 100%;
+    height: 100%;
+    background: rgba(10,10,10,.7);
+}
+#pagetutorial .box {
+    width: 500px;
+    margin: 0px auto;
+    margin-top: 120px;
+    background: #000;
+    border: 1px solid #222;
+    padding: 20px;
+    text-transform: uppercase;
+}
+#pagetutorial h1 {
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    background: #111;
+    color: #aaa;
+    font-family: 'Unica One', sans-serif !important;
+	text-transform: uppercase;
+	padding: 20px 10px;
+    border-bottom: 1px solid #222;
+    letter-spacing: 1px;
+    margin: -20px;
+    margin-bottom: 20px;
+}
+#pagetutorial ol {
+    list-style: none;
+}
+#pagetutorial li {
+    background: #111;
+    color: #888;
+    margin-bottom: 1px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 0px #000;
+}
+#pagetutorial li span {
+    display: table-cell;
+    padding: 10px;
+}
+#pagetutorial li u {
+    color: #aaa;
+    background: #111; 
+    font-size: 14px;
+    padding: 10px;
+    width: 12px; max-width: 12px; min-width: 12px;
+    margin-right: 10px;
+    display: table-cell;
+    vertical-align: middle;
+    border-right: 1px solid #000;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Vidaloka", sans-serif;
+}
+#pagetutorial li b {
+    color: #ccc;
+    font-weight: normal;
+}
+#pagetutorial hr {
+    margin: 10px 0px;
+    border: none;
+    background: #000;
+    height: 1px;
+}
+
+#fechartutorial {
+    margin: 0px auto;
+    margin-top: 20px;
+    display: table;
+    padding: 10px;
+    background: #111;
+    color: #aaa;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+/*** TUTORIAL DA PÁGINA fim ***/
+
+
+
+/************************************************** COOKIES começo **/
+#cookiesmessage {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 99999999;
+    background: #222;
+    color: #ccc;
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: .5px;
+    font-size: 14px;
+    line-height: 14px;
+}
+#cookiesmessage a {
+    text-transform: uppercase;
+    background: #333;
+    padding: 10px;
+    display: block;
+    float: right;
+    margin: -10px 0px;
+    color: #fff;
+}
+/************************************************** COOKIES começo **/
+	
+	
+
+</style>
+</head>
+<body>
+<div id="all">
+
+
+
+<!---- COOKIES MESSAGE ---->
+<div id="cookiesmessage" style="display: none;">
+<span class="l_pt">Esta página utiliza cookies.</span>
+<span class="l_en">This page uses cookies.</span>
+<a href="#" onclick="document.getElementById('cookiesmessage').style.display = 'none'; returnfalse;"> <i class="lnr lnr-cross"></i> </a>
+</div><!-- #cookiesmessage -->
+<!---- COOKIES MESSAGE ---->
+
+
+<!---- ALTERAR CORES ---->
+<div id="cores" title="Não gosta de cores escuras? Mude o tema para a versão clara.">
+<span class="l_pt">Versão clara</span> <span class="l_en">Bright version</span> <i class="fa fa-toggle-off"></i>
+</div><!-- #cores -->
+<!---- ALTERAR CORES ---->
+
+
+
+<!---- ALTERAR IDIOMA ---->
+<div id="idioma">
+<span class="l_pt">Escolher idioma</span> <span class="l_en">Choose language</span> <i class="fa fa-chevron-circle-down"></i>
+
+<nav>
+<a href="#" id="l_en"><img src="https://raw.githubusercontent.com/anyhsalinas/personal_content/master/bandeiras/bandeira_eua.jpg"/> English</a>
+<a href="#" id="l_pt"><img src="https://raw.githubusercontent.com/anyhsalinas/personal_content/master/bandeiras/bandeira_brasil.jpg"/> Português (BR)</a>
+</nav>
+</div><!-- #idioma -->
+<!---- ALTERAR IDIOMA ---->
+
+
+
+
+<!------------------------------------------- HEADER começo --------->
+<header id="header">
+
+<!------- MENU PRINCIPAL ------->
+<nav id="menu">
+
+<a href="http://anyhs-themes.tumblr.com"> Home </a>
+
+<a href="http://anyhs-themes.tumblr.com/contato"> <span class="l_pt">FAQ/Suporte</span> <span class="l_en">FAQ/Support</span> </a>
+
+<a href="http://anyhs-themes.tumblr.com/tutoriais"> <span class="l_pt">Tutoriais</span> <span class="l_en">Tutorials</span> </a>
+
+<a href="http://anyhs-themes.tumblr.com/encomendas"> <span class="l_pt">Encomendas</span> <span class="l_en">Commissions</span> </a>
+
+</nav><!-- #menu -->
+<!------- MENU PRINCIPAL ------->
+
+
+<h1> <span class="l_pt">Materiais <small>por Anyh S.</small> </span> <span class="l_en">Resources <small>by Anyh S.</small></span></h1>
+
+
+<!-- DESCRIÇÃO DA PÁGINA -->
+<div id="desc">
+
+<span class="l_pt">Bem-vindo(a) à minha página de materiais para Tumblr e Photoshop!<br> Escolha o que você quer ver primeiro no menu abaixo.</span>
+
+<span class="l_en">Welcome to my page of resources for Tumblr and Photoshop! <br> Choose what you want to see first in the menu below.</span>
+
+</div><!-- #desc -->
+<!-- DESCRIÇÃO DA PÁGINA -->
+
+
+</header><!-- #header -->
+<!------------------------------------------- HEADER fim --------->
+
+
+
+
+
+
+
+
+
+<!----------------------------------- MENU 2 começa ---------->
+<nav id="menu2">
+<a href="#themes" id="bot-themes"> <span class="l_pt">Temas para Tumblr</span> <span class="l_en">Themes for Tumblr</span> </a>
+<a href="#pages" id="bot-pages"> <span class="l_pt">Páginas personalizadas</span> <span class="l_en">Custom pages</span> </a>
+<a href="http://anyhs-themes.tumblr.com/tagged/skins-personalizadas" id="bot-skins" target="_blank"> Skins </a>
+<a href="http://anyhs-themes.tumblr.com/tagged/cursores" id="bot-cursors" target="_blank"> <span class="l_pt">Cursores</span> <span class="l_en">Cursors</span> </a>
+<a href="http://anyhs-themes.tumblr.com/tagged/psd" id="bot-psds" target="_blank"> PSD's </a>
+<a href="http://anyhs-themes.tumblr.com/tagged/action" id="bot-actions" target="_blank"> Actions </a>
+</nav><!-- #menu2 -->
+<!----------------------------------- MENU 2 começa ---------->
+
+
+
+
+
+
+
+<!----------- CAIXAS começo --->
+<div id="caixas">
+
+
+
+<!---------- REGRAS ---------->
+<div id="esquerda" class="caixa regras_nosticky">
+
+<h1> <span class="l_pt">Termos de uso</span> <span class="l_en">Terms of use</span>  </h1>
+
+<ul>
+<li><i class="fa fa-heart" aria-hidden="true"></i> <span class="l_pt">Dê like na postagem do material que você pegar;</span> <span class="l_en">Like the post of the resource you get;</span> </li>
+<li><i class="fa fa-pencil" aria-hidden="true"></i> <span class="l_pt">Você pode fazer modificações em meus materiais para uso pessoal, mas não redistribua, nem remova os créditos;</span> <span class="l_en">You can change things in my resources for personal use, but don't redistribute nor remove the credits;</span> </li>
+<li><i class="fa fa-times" aria-hidden="true"></i> <span class="l_pt">Não use meus materiais como base para criar outros materiais que não sejam apenas para uso próprio;</span> <span class="l_en">Don't use my resources as a base to create another resources that are not only for personal use;</span> </li>
+<li><i class="fa fa-retweet" aria-hidden="true"></i> <span class="l_pt">Você pode reblogar e indicar meus materiais, mas nunca repostar/repassar;</span> <span class="l_en">You can reblog and indicate my resources, but never repost/redistribute;</span> </li>
+<li><i class="fa fa-copyright" aria-hidden="true"></i> <span class="l_pt">Jamais remova os créditos;</span> <span class="l_en">Never remove the credits;</span> </li>
+<li><i class="fa fa-search" aria-hidden="true"></i> <span class="l_pt">Leia a descrição dos materiais antes de pegá-los para saber quais são as suas características e/ou opções;</span> <span class="l_en">Read the description of the resources before taking them, so you can know what are their features and/or options;</span> </li>
+<li><i class="fa fa-bell-slash" aria-hidden="true"></i> <span class="l_pt">Não precisa avisar quando pegar um material.</span> <span class="l_en">You don't need to tell me if you get a resource.</span> </li>
+</ul>
+
+</div><!-- #esquerda -->
+<!---------- REGRAS ---------->
+
+
+    
+
+<!------------------------ CAIXA 1 começo ---->
+<div class="caixa" id="centro">
+
+
+
+
+
+</div><!-- .caixa -->
+<!------------------------ CAIXA 1 fim ---->
+
+
+
+
+
+<!------------------------ CAIXA 2 começo ---->
+<div class="caixa" id="direita">
+
+<!----------------------------------------------- FILTROS -->
+<!----- PÁGINAS TITULO ----->
+<h1> <span class="l_pt">Filtros</span> <span class="l_en">Filters</span> </h1>
+<!----- PÁGINAS TITULO ----->
+
+<ul>
+<li> <span class="l_pt">Em breve...</span> <span class="l_en">Coming soon...</span> </li>
+</ul>
+<!----------------------------------------------- FILTROS -->
+
+
+
+<!----------------------------------------------- AJUDA -->
+<!----- PÁGINAS TITULO ----->
+<h1> <span class="l_pt">Ajuda</span> <span class="l_en">Help</span> </h1>
+<!----- PÁGINAS TITULO ----->
+
+<ul>
+	
+<li id="abrirtutorial">
+<span class="l_pt"><a href="#">Como obter meus materiais</a></span>
+<span class="l_en"><a href="#">How to get my resources</a></span>
+</li>
+	
+<li>
+<span class="l_pt"><a href="http://anyhs-themes.tumblr.com/post/94604324987/como-obter-e-instalar-meus-temas-para-tumblr" target="_blank">Como instalar e customizar meus temas para Tumblr</a></span>
+<span class="l_en"><a href="http://anyhs-themes.tumblr.com/post/150316018507/how-to-install-my-tumblr-themes" target="_blank">How to install and customize my themes for Tumblr</a></span>
+</li>
+
+<li>
+<span class="l_pt"><strike>Como instalar e customizar minhas páginas</strike> (em breve)</span>
+<span class="l_en"><strike>How to install and customize my pages</strike> (soon)</span>
+</li>
+
+<li>
+<span class="l_pt"><strike>Como instalar skins</strike> (em breve)</span>
+<span class="l_en"><strike>How to install skins</strike> (soon)</span>
+</li>
+
+<li>
+<span class="l_pt"><strike>Como instalar cursores</strike> (em breve)</span>
+<span class="l_en"><strike>Hos to install cursors</strike> (soon)</span>
+</li>
+
+<li>
+<span class="l_pt"><a href="http://anyhs-themes.tumblr.com/post/150708664502/anyh-desculpa-eu-nao-sei-se-voce-ja-explicou" target="_blank">Como instalar e usar actions</a></span>
+<span class="l_en"><a href="http://anyhs-themes.tumblr.com/post/150708664502/anyh-desculpa-eu-nao-sei-se-voce-ja-explicou" target="_blank">How to install and use actions (in portuguese only)</a></span>
+</li>
+
+<li>
+<span class="l_pt"><a href="http://anyhs-themes.tumblr.com/tutoriais" target="_blank">Mais tutoriais...</a></span>
+<span class="l_en"><a href="http://anyhs-themes.tumblr.com/tutoriais" target="_blank">More tutorials...</a></span>
+</li>
+</ul>
+<!----------------------------------------------- AJUDA -->
+
+
+
+</div><!-- .caixa -->
+<!------------------------ CAIXA 2 fim ---->
+
+
+</div><!-- #caixas -->
+<!----------- CAIXAS fim --->
+
+
+
+<!------------------------ TUTORIAL DA PÁGINA começo ---->
+<div id="pagetutorial">
+<div class="box">
+
+<h1><span class="l_pt">Tutorial: Como obter meus materiais</span> <span class="l_en">Tutorial: How to get my resources</span></h1>
+
+<ol>
+
+<li><u>1</u>
+<span class="l_pt">Clique no botão "pegar" ou "comprar" que aparece embaixo da imagem do material que você quer;</span>
+<span class="l_en">Click on the "get" or "buy" button that you see below the image of the resource that you want;</span>
+</li>
+
+<li><u>2</u>
+<span class="l_pt">Para materiais gratuitos você precisa esperar por 5 segundos para poder pular o anúncio e ser redirecionado para a página de download;
+<hr>
+(<b>ATENÇÃO:</b> na página de anúncio, você <b>não</b> precisa interagir com nada que você não queira &mdash; como baixar/instalar algo, permitir alguma coisa no seu navegador, ou criar uma conta em algum site/aplicativo &mdash;  para poder prosseguir para a página de download do material; só o que você precisa fazer é esperar por 5 segundos e então clicar neste botão aqui: <a href="https://raw.githubusercontent.com/anyhsalinas/personal_content/master/my-pages/themes-page/exemplo-pt.jpg" target="_blank" title="Veja um print de exemplo">exemplo</a>. E se após clicar nesse botão uma página de outro site se abrir, volte e clique em "fechar propaganda" de novo, e daí você será levado para o link certo.)
+</span>
+<span class="l_en">For free resources you need to wait 5 seconds to skip the ad and be redirected to the download page;
+<hr>
+(<b>ATTENTION:</b> on the advertising page, you <b>do not</b> need to interact with anything that you don't want &mdash; like to download/install something, allow anything in your browser, or create an account on a website/app &mdash; to be able to proceed to the download page; all you need to do is to wait for 5 seconds and then click on this button here: <a href="https://raw.githubusercontent.com/anyhsalinas/personal_content/master/my-pages/themes-page/exemplo-en.jpg" target="_blank" title="Veja um print de exemplo">example</a>. And if after you click in this button a page from another website open, then come back and click on "skip ad" again, and you'll be taken to the right link.)
+</span>
+</li>
+
+<li><u>3</u>
+<span class="l_pt">Você será levado para o post do material, onde você encontra a sua descrição e o seu link para download;</span>
+<span class="l_en">You'll be taken to the post of the resource, where you can find its description and download link;</span>
+</li>
+
+<li><u>4</u>
+<span class="l_pt">Se você não souber como instalar algum dos materiais que você quer, dê uma olhada nos tutoriais listados aqui ao lado, na caixa "Ajuda". → </span>
+<span class="l_en">If you don't know how to install any of the resources you want, check the tutorials listed here on the side, on the "Help" box. → </span>
+</li>
+
+</ol>
+
+<a href="#" id="fechartutorial">
+<span class="l_pt">Ok, entendi!</span>
+<span class="l_en">Ok, I got it!</span>
+</a>
+
+</div><!-- .box -->
+</div><!-- #pagetutorial -->
+<!------------------------ TUTORIAL DA PÁGINA fim ---->
+
+
+<div id="scroll_up" class="scrollbuttons"> <i class="lnr lnr-chevron-up"></i> </div>
+
+
+
+
+
+</div><!-- #all -->
+</body>
+</html>
