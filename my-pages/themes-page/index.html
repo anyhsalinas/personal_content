@@ -1,13 +1,15 @@
 <!--
  
-			EXCLUSIVE THEMES PAGE
+			THEMES PAGE (exclusively for anyhs-themes.tumblr.com)
 			by Anyh Salinas - © 2018
 			www.anyhs-themes.tumblr.com
  
  
    ♦ Don't copy;
    ♦ Don't take parts of this code;
-   ♦ If you want something you saw in this theme, ask me, don't steal it.
+   ♦ If you want something you saw in this theme, ask me, don't steal it;
+   ♦ This theme was exclusively to anyhs-themes.tumblr.com, it's not available for anyone else.
+
      
   
    CONTACT:
@@ -137,15 +139,17 @@ $(window).ready(function(){
 	
 	$("#bot-themes").click(function(){
 	    $("#centro").load("https://anyhsalinas.github.io/personal_content/my-pages/themes-page/themes.html #conteudo");
-	    scrolldown();
-	    translate();
+	    scrolldown(function(){
+	        translate();
+	    });
 		return false;
 	});
 	
 	$("#bot-pages").click(function(){
 	    $("#centro").load("https://anyhsalinas.github.io/personal_content/my-pages/themes-page/pages.html #conteudo");
-	    scrolldown();
-	    translate();
+	    scrolldown(function(){
+	        translate();
+	    });
 		return false;
 	});
 	/** carregar materiais **/
