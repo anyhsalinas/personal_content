@@ -109,12 +109,15 @@ $(window).ready(function(){
 	/** botao #idioma **/
 	
 	
-	/***** scroll down & up *****/
+    /***** scroll down & up *****/
     var posts_location = $("#caixas").offset().top;
-    $("#scroll_down").click(function(){
-        $("body").animate({
+    function scrolldown() {
+	$("body").animate({
             scrollTop: posts_location
         }, 1000);
+    };
+    $("#scroll_down").click(function(){
+        scrolldown();
     });
     $("#scroll_up").click(function(){
         $("body").animate({
@@ -126,9 +129,14 @@ $(window).ready(function(){
     
 	
 	
-	/** carregando materiais **/
+	/** carregar materiais **/
 	$("#centro").load("https://anyhsalinas.github.io/personal_content/my-pages/themes-page/themes.html #conteudo");
-	/** carregando materiais **/
+	$("#bot-pages").click(function(){
+		$("#centro").load("https://anyhsalinas.github.io/personal_content/my-pages/themes-page/pages.html #conteudo");
+		scrolldown();
+		return false;
+	});
+	/** carregar materiais **/
 	
 	
 	
