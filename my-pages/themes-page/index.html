@@ -136,18 +136,22 @@ $(window).ready(function(){
 	
 	
 	/** carregar materiais **/
-	$("#centro").load("https://anyhsalinas.github.io/personal_content/my-pages/themes-page/themes.html #conteudo");
+	$("#centro").load("https://anyhsalinas.github.io/personal_content/my-pages/themes-page/themes.html #conteudo", function(){
+	    translate();
+	});
 	
 	$("#bot-themes").click(function(){
-	    $("#centro").load("https://anyhsalinas.github.io/personal_content/my-pages/themes-page/themes.html #conteudo");
+	    $("#centro").load("https://anyhsalinas.github.io/personal_content/my-pages/themes-page/themes.html #conteudo", function(){
 	    translate();
+	});
 	    scrolldown();
 		return false;
 	});
 	
 	$("#bot-pages").click(function(){
-	    $("#centro").load("https://anyhsalinas.github.io/personal_content/my-pages/themes-page/pages.html #conteudo");
+	    $("#centro").load("https://anyhsalinas.github.io/personal_content/my-pages/themes-page/pages.html #conteudo", function(){
 	    translate();
+	});
 	    scrolldown();
 		return false;
 	});
