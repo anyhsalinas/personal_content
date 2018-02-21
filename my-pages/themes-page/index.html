@@ -72,14 +72,17 @@ $(window).ready(function(){
     /******* alterar idioma *******/
     var langua = navigator.language;
     function translate() {
+        alert(langua);
         if(langua == "pt-BR" || langua == "pt-PT") {
             $(".l_pt").show();
     		$(".l_en").hide();
         } else {
             $(".l_en").show();
     		$(".l_pt").hide();
-        }
-        
+        };
+    };
+    translate();
+    
     	$("#l_en").click(function(){
     		$(".l_pt").hide();
     		$(".l_en").show();
@@ -91,8 +94,6 @@ $(window).ready(function(){
     		$(".l_pt").show();
     		return false;
     	});
-    };
-    translate();
 	/******* alterar idioma *******/
 	
 	
