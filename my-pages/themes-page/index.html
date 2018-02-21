@@ -135,8 +135,8 @@ $(window).ready(function(){
     
     /***** open tutorial *****/
     $(document).scroll(function(){
-        if(abc >= menu_location) {
-            $("#pagetutorial").fadeIn(300);
+        if($(document).scrollTop() >= menu_location) {
+            $("#pagetutorial").css({"visibility":"visible"});
         }
     });
     
@@ -606,6 +606,7 @@ header #desc {
 
 /*** TUTORIAL DA PÁGINA começo ***/
 #pagetutorial {
+    visibility: hidden;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -915,8 +916,8 @@ header #desc {
 </li>
 
 <li><u>4</u>
-<span class="l_pt">Se você não souber como instalar algum dos materiais que você quer, dê uma olhada nos tutoriais listados aqui ao lado. -> </span>
-<span class="l_en">If you don't know how to install any of the resources you want, check the tutorials listed here on the side. -> </span>
+<span class="l_pt">Se você não souber como instalar algum dos materiais que você quer, dê uma olhada nos tutoriais listados aqui ao lado, na caixa "Ajuda". → </span>
+<span class="l_en">If you don't know how to install any of the resources you want, check the tutorials listed here on the side, on the "Help" box. → </span>
 </li>
 
 </ol>
