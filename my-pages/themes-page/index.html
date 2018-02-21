@@ -121,9 +121,6 @@ $(window).ready(function(){
             scrollTop: menu_location
         }, 1000);
     };
-    $("#scroll_down").click(function(){
-        scrolldown();
-    });
     $("#scroll_up").click(function(){
         $("body").animate({
             scrollTop: 0
@@ -239,7 +236,7 @@ ol, ul {margin: 0px; padding: 0px; list-style: inside;}
 
 header {
 	text-align: center;
-	padding: 0px 0px 80px 0px;
+	padding: 0px 0px 0px 0px;
 }
 
 /******* ALTERAR IDIOMA e ALTERAR CORES *******/
@@ -383,12 +380,6 @@ header #desc {
 }
 .scrollbuttons:hover {
     color: #555;
-}
-#scroll_down {
-	margin: 40px auto;
-}
-#scroll_down:hover {
-    transform: rotate(360deg);
 }
 #scroll_up {
 	position: fixed;
@@ -787,11 +778,9 @@ header #desc {
 <!-- DESCRIÇÃO DA PÁGINA -->
 <div id="desc">
 
-<span class="l_pt">Bem-vindo(a) à minha página de materiais para Tumblr e Photoshop!<br> Clique na seta abaixo para ver meus materiais disponíveis.</span>
+<span class="l_pt">Bem-vindo(a) à minha página de materiais para Tumblr e Photoshop!<br> Escolha o que você quer ver primeiro no menu abaixo.</span>
 
-<span class="l_en">Welcome to my page of resources for Tumblr and Photoshop! <br> Click the arrow below to see my available stuff.</span>
-
-<div id="scroll_down" class="scrollbuttons"> <i class="lnr lnr-chevron-down"></i> </div>
+<span class="l_en">Welcome to my page of resources for Tumblr and Photoshop! <br> Choose what you want to see first in the menu below.</span>
 
 </div><!-- #desc -->
 <!-- DESCRIÇÃO DA PÁGINA -->
