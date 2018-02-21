@@ -142,6 +142,7 @@ $(window).ready(function(){
     
     $("#fechartutorial").click(function(){
         $("#pagetutorial").fadeOut(300);
+        return false;
     });
     /***** open tutorial *****/
     
@@ -689,6 +690,34 @@ header #desc {
     font-size: 12px;
 }
 /*** TUTORIAL DA PÁGINA fim ***/
+
+
+
+/************************************************** COOKIES começo **/
+#cookiesmessage {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 99999999;
+    background: #222;
+    color: #ccc;
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: .5px;
+    font-size: 14px;
+    line-height: 14px;
+}
+#cookiesmessage a {
+    text-transform: uppercase;
+    background: #333;
+    padding: 10px;
+    display: block;
+    float: right;
+    margin: -10px 0px;
+    color: #fff;
+}
+/************************************************** COOKIES começo **/
 	
 	
 
@@ -696,6 +725,16 @@ header #desc {
 </head>
 <body>
 <div id="all">
+
+
+
+<!---- COOKIES MESSAGE ---->
+<div id="cookiesmessage">
+<span class="l_pt">Esta página utiliza cookies.</span>
+<span class="l_en">This page uses cookies.</span>
+<a href="#"> <i class="lnr lnr-cross"></i> </a>
+</div><!-- #cookiesmessage -->
+<!---- COOKIES MESSAGE ---->
 
 
 <!---- ALTERAR CORES ---->
