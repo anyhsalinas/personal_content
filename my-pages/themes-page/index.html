@@ -149,43 +149,86 @@ $(window).ready(function(){
     
 	
 	
-	/** carregar materiais **/
+	/************************************** carregar materiais **********/
 	$("#centro").load("https://anyhsalinas.github.io/personal_content/my-pages/themes-page/themes.html #conteudo", function(){
 	    translate();
 	});
 	
-	$("#bot-themes").click(function(){
+	/***************************** themes **/
+	function callThemes(){
 	    $("#centro").load("https://anyhsalinas.github.io/personal_content/my-pages/themes-page/themes.html #conteudo", function(){
-	    translate();
-	});
+	        translate();
+	    });
 	    scrolldown();
-		return false;
+	};
+	
+	$("#bot-themes").click(function() {
+	   callThemes();
+	   return false; 
 	});
 	
-	$("#bot-pages").click(function(){
+	if(document.location.hash == "#themes") {
+	    callThemes();
+	};
+	/***************************** themes **/
+	
+	
+	/***************************** pages **/
+	function callPages(){
 	    $("#centro").load("https://anyhsalinas.github.io/personal_content/my-pages/themes-page/pages.html #conteudo", function(){
-	    translate();
-	});
+	        translate();
+	    });
 	    scrolldown();
-		return false;
+	};
+	
+	$("#bot-pages").click(function() {
+	   callPages();
+	   return false; 
 	});
 	
-	$("#bot-skins").click(function(){
+	if(document.location.hash == "#pages") {
+	    callPages();
+	};
+	/***************************** pages **/
+	
+	
+	/***************************** skins **/
+	function callSkins(){
 	    $("#centro").load("https://anyhsalinas.github.io/personal_content/my-pages/themes-page/skins.html #conteudo", function(){
-	    translate();
-	});
+	        translate();
+	    });
 	    scrolldown();
-		return false;
+	};
+	
+	$("#bot-skins").click(function() {
+	   callSkins();
+	   return false; 
 	});
 	
-	$("#bot-counters").click(function(){
+	if(document.location.hash == "#skins") {
+	    callSkins();
+	};
+	/***************************** skins **/
+	
+	/***************************** counters **/
+	function callCounters(){
 	    $("#centro").load("https://anyhsalinas.github.io/personal_content/my-pages/themes-page/counters.html #conteudo", function(){
-	    translate();
-	});
+	        translate();
+	    });
 	    scrolldown();
-		return false;
+	};
+	
+	$("#bot-counters").click(function() {
+	   callCounters();
+	   return false; 
 	});
-	/** carregar materiais **/
+	
+	if(document.location.hash == "#counters") {
+	    callCounters();
+	};
+	/***************************** counters **/
+	
+	/************************************** carregar materiais **********/
 	
 	
 	
