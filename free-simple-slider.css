@@ -102,13 +102,13 @@
 .free-simple-slider .slider-dots li.current {
 }
 
-.free-simple-slider .arrows {
+.free-simple-slider .arrows-container {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     z-index: 99999;
+    transform: translateY(-50%);
 }
-.free-simple-slider .arrows:hover {
+.free-simple-slider .arrows {
     cursor: pointer;
 }
 
