@@ -105,19 +105,18 @@
 .free-simple-slider .arrows-container {
     position: absolute;
     width: 100%;
-    top: 50%;
+    top: 40%;
     z-index: 99999;
-    transform: translateY(-50%);
 }
 .free-simple-slider .arrows {
     cursor: pointer;
 }
 
 .free-simple-slider .prev-arrow {
-    left: 0px;
+    float: left;
 }
 .free-simple-slider .next-arrow {
-    right: 0px;
+    float: right;
 }
 
 .free-simple-slider .arrows img {
