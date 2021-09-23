@@ -108,7 +108,6 @@
     top: 50%;
     z-index: 99999;
     transform: translateY(-50%);
-    background: white;
 }
 .free-simple-slider .arrows {
     cursor: pointer;
