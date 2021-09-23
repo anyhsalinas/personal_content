@@ -104,6 +104,7 @@
 
 .free-simple-slider .arrows-container {
     position: absolute;
+    width: 100%;
     top: 50%;
     z-index: 99999;
     transform: translateY(-50%);
