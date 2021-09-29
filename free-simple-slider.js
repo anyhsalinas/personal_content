@@ -193,14 +193,14 @@ $(document).ready(function () {
 
                 // ==== ARROW NAVIGATION ==== Changing slides after click on arrow animation
                 if (settings.arrows === true) {
-                    self.parent('.free-simple-slider').find('.prev-arrow').on('click', function (event) {
+                    self.parent('.free-simple-slider').children('.arrows-container').children('.prev-arrow').on('click', function (event) {
                         event.preventDefault();
                         clearInterval(interval);
                         changeSlides(false);
                         startChangeSlides();
                     });
 
-                    self.parent('.free-simple-slider').find('.next-arrow').on('click', function (event) {
+                    self.parent('.free-simple-slider').children('.arrows-container').children('.next-arrow').on('click', function (event) {
                         event.preventDefault();
                         clearInterval(interval);
                         changeSlides(true);
