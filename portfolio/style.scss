@@ -1,0 +1,442 @@
+/** colors: light version **/
+$mainBgColor: #e2e2e2;
+$mainFontColor: #707070;
+$textsShadow: 1px 1px 2px #383838;
+$bordersColor: #c5c5c5;
+
+$headerBgColor: #bba27e;
+$headerTitleColor: #ffffff;
+
+$titlesFontColor: #525252;
+$linksColor: #968263;
+
+
+/** fonts **/
+$mainFontFamily: 'Poppins', Verdana, sans-serif;
+$headerFontFamily: 'Rouge Script', Georgia, serif;
+$titlesFontFamily: 'Vidaloka', Georgia, serif;
+
+
+/** font sizes **/
+$mainFontSize: 14px;
+$headerTitleFontSize: 3.7em;
+$titlesFontSize: 1.3em;
+
+
+/** transition **/
+@mixin transition5s {
+    transition: .5s ease-in;
+}
+
+
+/** boxes **/
+$boxesBgColor: #f7f7f7;
+$boxesPadding: 10px;
+$boxesShadow: 2px 2px 0px #ccc;
+@mixin boxes {
+    background: $boxesBgColor;
+    color: $mainFontColor;
+    overflow: hidden;
+}
+
+
+/** menus **/
+$buttonsBgColor: #968263;
+$buttonsFontColor: #ffffff;
+$buttonsBgColorHover: #949494;
+$buttonsFontColorHover: #ffffff;
+$buttonsPadding: 5px;
+
+
+
+
+/********** CSS **********/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: $mainBgColor;
+    color: $mainFontColor;
+    font-family: $mainFontFamily;
+    font-size: $mainFontSize;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background: $mainBgColor;
+}
+::-webkit-scrollbar-thumb:vertical, ::-webkit-scrollbar-thumb:horizontal {
+    background: $buttonsBgColor;
+    border: 1px solid $bordersColor;
+}
+::-webkit-scrollbar-thumb:vertical:hover, ::-webkit-scrollbar-thumb:horizontal:hover {background: $buttonsBgColorHover;} 
+
+::selection {
+    background: $linksColor;
+    color: $mainBgColor;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $titlesFontFamily;
+    color: $titlesFontColor;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+h1 {font-size: 2.5em;}
+h2 {font-size: 2em;}
+h3, h4, h5, h6 {
+    padding-bottom: 2px;
+    border-bottom: 1px solid $titlesFontColor;
+}
+
+h3:last-child {
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    @include transition5s;
+    color: $linksColor;
+    text-decoration: none;
+}
+a:hover {color: $mainFontColor;}
+
+figure {
+    overflow: hidden;
+    margin: 0px;
+}
+figure img {
+    @include transition5s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: -3px;
+}
+
+
+/** tooltips **/
+#s-m-t-tooltip{
+    /* basic */
+    max-width: 300px;
+    z-index: 99999999999;
+    margin: 14px 14px 7px 12px;
+    transition: 0.5s;
+    /* style and design */
+    padding: 3px 5px;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    background: $buttonsBgColor;
+    color: $buttonsFontColor;
+    box-shadow: 1px 1px 5px $boxesShadow;
+    border: 1px solid $bordersColor;
+    @include transition5s;
+}
+/** tooltips **/
+
+
+/***** loading message *****/
+#loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 99999999999;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    -webkit-align-items: center; /* Safari 7.0+ */
+    align-items: center;
+    background: $mainBgColor;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+}
+#loading #loading-content {
+    -webkit-flex: 1; /* Safari 6.1+ */
+    flex: 1;
+}
+
+
+/** back to top button **/
+.btt-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 3;
+    display: none;
+}
+.btt-button a.box {
+    display: table;
+    text-align: center;
+    margin: 0px auto;
+    padding: 12px 15px;
+    font-size: 18px;
+    height: 10px;
+    width: 22px;
+    background: $buttonsBgColor;
+    border: 1px solid $bordersColor;
+}
+
+.btt-button a i {
+    display: inline-block;
+    color: $buttonsFontColor;
+    transition: 0.5s;
+    transform-origin: 50% 50%;
+}
+.btt-button a:hover i {
+    color: $buttonsFontColorHover;
+    transform: rotate(360deg);
+}
+
+
+/** menus **/
+.menu {
+    display: table;
+    text-align: center;
+}
+.menu .menu-button {
+    display: inline-table;
+}
+.menu .menu-button a {
+    display: block;
+    padding: $buttonsPadding;
+    background: $buttonsBgColor;
+    color: $buttonsFontColor;
+    border: 1px solid $bordersColor;
+}
+.menu .menu-button:hover a {
+    background: $buttonsBgColorHover;
+    color: $buttonsFontColorHover;
+}
+
+
+
+/** CONTROLS MENU **/
+#controls-menu.menu {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
+#controls-menu.menu .menu-button {
+    display: inline-table;
+    margin: 1px;
+}
+#controls-menu.menu .menu-button i.golight {
+    display: none;
+}
+
+#controls-menu.menu .menu-button .dropdown {
+    transition: .5s;
+    transform: scaleY(0);
+    transform-origin: 0px 0px;
+}
+#controls-menu.menu .menu-button:hover .dropdown {
+    transform: scale(1.0);
+}
+
+#controls-menu.menu .menu-button:hover .dropdown a {
+    background: $buttonsBgColor;
+    color: $buttonsFontColor;
+}
+#controls-menu.menu .menu-button:hover .dropdown a:hover {
+    background: $buttonsBgColorHover;
+    color: $buttonsFontColorHover;
+}
+
+
+/********** HEADER **********/
+#header {
+    position: relative;
+    background: $headerBgColor;
+    padding: 10px;
+    z-index: 3;
+    border-bottom: 1px solid $bordersColor;
+    text-shadow: $textsShadow;
+}
+#header .header-content {
+    text-align: center;
+    padding: 20px;
+}
+#header h1 {
+    font-size: $headerTitleFontSize;
+    font-family: $headerFontFamily;
+    color: $headerTitleColor;
+    margin: 0px;
+}
+#header #header-description {
+    color: $headerTitleColor;
+    margin-top: 5px;
+}
+
+
+/*** CONTENT ***/
+#content {
+    margin: 40px auto;
+    width: 80%;
+    text-align: center;
+    display: table;
+}
+
+
+.main-sections h1 {
+    display: table;
+    margin: 0px auto 5px auto;
+}
+
+.section-description {
+    width: 90%;
+    margin: 0px auto;
+}
+
+#tumblr-themes-section, #react-projects-section {
+    width: calc(50% - 20px);
+    display: inline-table;
+}
+
+#tumblr-themes-section {
+    border-right: 1px solid $bordersColor;
+    padding-right: 40px;
+    margin-right: 20px;
+}
+
+#old-themes-section {
+    border-top: 1px solid $bordersColor;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+/********** THEMES **********/
+.items-grid {
+    display: grid;
+    width: 100%;
+    grid: auto / calc(50% - 5px) calc(50% - 5px);
+    grid-gap: 10px;
+    margin: 10px;
+    align-items: stretch;
+}
+#old-themes-section .items-grid {
+    grid: auto / calc(25% - 5px) calc(25% - 5px) calc(25% - 5px) calc(25% - 5px);
+}
+
+.items-grid .item {
+    @include boxes;
+    display: inline-block;
+    padding: 15px;
+    position: relative;
+    border: 1px solid $bordersColor;
+}
+.items-grid .item a {
+    color: $mainFontColor;
+}
+
+.items-grid .item:hover figure img {
+    transform: rotate(-10deg) scale(1.4); 
+}
+
+.items-grid .item-cover {
+    @include transition5s;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: $boxesBgColor;
+    color: $mainFontColor;
+    font-size: 30px;
+    opacity: 0;
+}
+.items-grid .item-cover:hover {
+    opacity: .8;
+}
+
+.items-grid .item-cover-content {
+    display: table;
+    margin: 0px auto;
+}
+.items-grid .item-cover-content i {margin-right: 10px;}
+
+.items-grid .item-title {
+    margin-top: 10px;
+    color: $titlesFontColor;
+    font-size: $titlesFontSize;
+}
+
+.items-grid p {
+    font-size: 0.9em;
+}
+
+
+/********** BOTTOM MENU **********/
+#bottom-menu.menu {
+    margin: 40px auto;
+}
+#bottom-menu.menu .menu-button:hover {
+    letter-spacing: 1px;
+}
+
+#bottom-menu.menu .menu-button a {font-size: $titlesFontSize;}
+#bottom-menu.menu .menu-button u {
+    display: block;
+    font-size: 12px;
+    text-decoration: none;
+    font-style: italic;
+    margin-top: 2px;
+    letter-spacing: 0px;
+    opacity: .7;
+}
+
+
+
+/********** FOOTER **********/
+#footer {
+    background: $headerBgColor;
+    padding: 10px;
+    border-top: 1px solid $bordersColor;
+}
+#footer .menu {margin: 0px auto;}
+#footer .menu-button {
+    display: inline-block;
+    margin: 5px;
+}
+#footer .menu-button a {
+    border-radius: 100%;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    width: 2em;
+    height: 2em;
+}
+#footer .menu-button i {vertical-align: middle;}
+
+
+/******************** MOBILE VERSION ********************/
+@media only screen and (max-width: 700px) {
+
+    #tumblr-themes-section, #react-projects-section {
+        width: 100%;
+        border: none;
+        padding: 0px;
+    }
+
+    #react-projects-section {
+        border-top: 1px solid $bordersColor;
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+
+    #old-themes-section .items-grid {
+        grid: auto / 50% 50%;
+    }
+
+}
