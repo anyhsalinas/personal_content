@@ -214,6 +214,7 @@ figure img {
   position: fixed;
   left: 10px;
   top: 10px;
+  width: 20px;
 }
 
 #controls-menu.menu .menu-button {
@@ -273,7 +274,8 @@ figure img {
 
 #header #header-description {
   color: #ffffff;
-  margin-top: 5px;
+  margin: 5px auto 0px auto;
+  display: table;
 }
 
 /*** CONTENT ***/
