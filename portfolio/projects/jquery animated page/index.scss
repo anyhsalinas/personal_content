@@ -1,0 +1,24 @@
+/** main variables **/
+$colorMainBg: #cccccc;
+$colorMainFont: #313131;
+$colorMainLinks: #799c79;
+
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: $colorMainBg;
+    color: $colorMainFont;
+}
+
+::-webkit-scrollbar {
+    background: $colorMainBg;
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: $colorMainLinks;
+}

@@ -1,0 +1,20 @@
+/** main variables **/
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #cccccc;
+  color: #313131;
+}
+
+::-webkit-scrollbar {
+  background: #cccccc;
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #799c79;
+}
+/*# sourceMappingURL=index.css.map */
