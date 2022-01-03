@@ -2,8 +2,38 @@
 $colorMainBg: #cccccc;
 $colorMainFont: #313131;
 $colorMainLinks: #799c79;
+$transitionMain: 0.5s;
+$fontMainFont: 'Open Sans';
+$sizeMainFont: 14px;
 
+/** spacing **/
+$sizePaddingMain: 20px;
+$sizeSpacingMain: 20px;
+$sizePaddingSmall: 10px;
+$sizeSpacingSmall: 10px;
 
+/** titles **/
+$colorTitles: #444;
+$fontTitles: 'Open Sans';
+$sizeTitles1: 4em;
+$sizeTitles2: 3.5em;
+$sizeTitles3: 3em;
+$sizeTitles4: 2.5em;
+$sizeTitles5: 2em;
+$sizeTitles6: 1.5em;
+
+/** highlights **/
+$colorHighlightsBg: #757575;
+$colorHighlightsFont: #ffffff;
+@mixin highlights {
+    background: $colorHighlightsBg;
+    color:$colorHighlightsFont;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
 html, body {
     height: 100%;
@@ -12,6 +42,9 @@ html, body {
 body {
     background: $colorMainBg;
     color: $colorMainFont;
+    font-family: $fontMainFont;
+    font-size: $sizeMainFont;
+    line-height: $sizeMainFont;
 }
 
 ::-webkit-scrollbar {
@@ -21,4 +54,104 @@ body {
 }
 ::-webkit-scrollbar-thumb {
     background: $colorMainLinks;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $colorTitles;
+    font-family: $fontTitles;
+    font-weight: normal;
+    line-height: 1.4em;
+    display: table;
+    margin: 0px auto;
+}
+h1 {font-size: $sizeTitles1;}
+h2 {font-size: $sizeTitles2;}
+h3 {font-size: $sizeTitles3;}
+h4 {font-size: $sizeTitles4;}
+h5 {font-size: $sizeTitles5;}
+h6 {font-size: $sizeTitles6;}
+
+::selection {
+    background: $colorMainLinks;
+    color: $colorMainBg;
+}
+
+b, strong {font-weight: 700;}
+mark, pre, blockquote {@include highlights;}
+
+a {text-decoration: none;}
+*:not(.button) > a {
+    color: $colorMainLinks;
+    transition: $transitionMain;
+    box-shadow: 0px 1px 0px transparent;
+}
+*:not(.button) > a:hover {
+    color: $colorMainFont;
+    box-shadow: 0px 1px 0px $colorMainFont;
+}
+
+.menu {display: table;}
+.menu .button a {display: block;}
+
+
+#loading {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: $colorMainBg;
+    z-index: 99999999999999999999999;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+#loading .loading-content {
+    flex: 1;
+}
+
+
+/********** HEADER [start] **********/
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+/********** HEADER [end] **********/
+
+/********** SECTIONS [start] **********/
+main {
+    height: 100%;
+}
+
+section {
+    position: relative;
+    height: 100%;
+    box-shadow: 5px 5px 0px 0px black;
+}
+
+/** intro **/
+section#section-intro #main-title {
+    margin: 0px auto;
+}
+section#section-intro #main-title mark {
+    background: none;
+    color: $colorTitles;
+    font-weight: 300;
+}
+
+/** section 2 **/
+section#section-2 {
+    background: #fff;
+}
+
+/********** SECTIONS [end] **********/
+
+
+
+/*** ANIMATIONS ***/
+.animation-fade-slide-up {
+    margin-bottom: -100px;
+    opacity: .1;
 }

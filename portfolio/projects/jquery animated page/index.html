@@ -2,26 +2,135 @@
 <html>
 <head>
 
+    <!-- basics: -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- css -->
+    <!-- css: -->
     <link rel="stylesheet" href="index.css"/>
 
-    <!-- jquery -->
+    <!-- jquery: -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
 
+    <!-- fonts: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- icons: -->    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"><!-- fontawesome -->
+
+    <!-- title: -->
     <title>Animated Landing Page</title>
     <link rel="shortcut icon" href="https://i.pinimg.com/originals/b8/47/d5/b847d555f6b6e8e734108e9b0d9f4b5e.gif"/>
 
 </head>
 <body>
 
-    <h1>oi</h1>
+
+    <!-- loading message -->
+    <div id="loading">
+    <div class="loading-content">
+        <i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true"></i>
+        <span class="l_pt">Carregando...</span>
+        <span class="l_en">Loading...</span>
+    </div>
+    </div><!-- #loading -->
+    <!-- loading message -->
+
+    <!---------- HEADER [start] ---------->
+    <header>
+    
+        <nav id="controls-menu" class="menu">
+            <div class="button">
+                <a href="#" title="" target="_self">
+                    <i class="fas fa-language"></i>
+                    <span class="l_pt">Idioma</span>
+                    <span class="l_en">Language</span>
+                </a>
+            </div><!-- .button -->
+
+            <div class="button">
+                <a href="#" title="" target="_self">
+                    <i class="fas fa-moon"></i>
+                    <span class="l_pt">Tema escuro</span>
+                    <span class="l_en">Dark theme</span>
+                </a>
+            </div><!-- .button -->
+
+        </nav><!-- #controls-menu -->
+
+    </header>
+    <!---------- HEADER [end] ---------->
+
+    <main>
+
+        <!---------- SECTION 01 [start] ---------->
+        <section id="section-intro">
+
+            <h1 id="main-title" class="animation-fade-slide-up">
+                <span class="l_pt"><mark>Seja</mark> <b>bem-vindo(a)!</b></span>
+                <span class="l_en"><mark>You are</mark> <b>welcome!</b></span>
+            </h1>
+
+            <p id="main-description" class="description">
+                hello, <a href="#">this is a link</a>, what do you think?
+            </p>
+
+        </section><!-- #section-intro -->
+        <!---------- SECTION 01 [end] ---------->
+
+
+        <!---------- SECTION 02 [start] ---------->
+        <section id="section-2">
+
+            <p class="description">
+                this is a description
+            </p>
+
+        </section><!-- #section-2 -->
+        <!---------- SECTION 02 [end] ---------->
+
+    
+
+    </main>
+
+    
+    <!---------- FOOTER [start] ---------->
+    <footer>
+
+    </footer>
+    <!---------- FOOTER [end] ---------->
     
 </body>
 
-<scrip src="index.js"></scrip>
+<script src="index.js"></script>
+
+<!-- smooth scroll (by: https://github.com/gblazex/smoothscroll) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.6/SmoothScroll.js"></script>
+<script>
+SmoothScroll({
+    // Scrolling Core
+    animationTime    : 700, // [ms]
+    stepSize         : 100, // [px]
+    // Acceleration
+    accelerationDelta : 50,  // 50
+    accelerationMax   : 3,   // 3
+    // Keyboard Settings
+    keyboardSupport   : true,  // option
+    arrowScroll       : 100,    // [px]
+    // Pulse (less tweakable)
+    // ratio of "tail" to "acceleration"
+    pulseAlgorithm   : true,
+    pulseScale       : 4,
+    pulseNormalize   : 1,
+    // Other
+    touchpadSupport   : false, // ignore touchpad by default
+    fixedBackground   : true, 
+    excluded          : ''   
+});
+</script>
+<!-- smooth scroll (by: https://github.com/gblazex/smoothscroll) -->
 
 </html>
