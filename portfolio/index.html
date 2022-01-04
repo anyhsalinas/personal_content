@@ -35,6 +35,10 @@
     <!-- css: -->
     <link rel="stylesheet" href="style.css"/>
 
+    <!-- Animate on Scroll (https://michalsnik.github.io/) CSS: -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 </head>
 <body>
 <div id="root">
@@ -64,12 +68,12 @@
     <header id="header">
         <div class="header-content">
 
-            <h1 id="header-title"> 
+            <h1 id="header-title" data-aos="fade-right"> 
                 <span class="l_pt">Portfólio de Anelise Salinas</span>
                 <span class="l_en">Anelise Salinas's Portfolio</span>
             </h1><!-- #header-title -->
 
-            <div id="header-description">
+            <div id="header-description" data-aos="fade-right" data-aos-delay="300">
                 <span class="l_pt">&mdash; Desenvolvedora Front-end/UI Designer &mdash;</span>
                 <span class="l_en">&mdash; Front-end Developer/UI Designer &mdash;</span>
             </div><!-- #header-description -->
@@ -78,7 +82,7 @@
 
 
         <!-- CONTROLS MENU [start] -->
-        <nav id="controls-menu" class="menu">
+        <nav id="controls-menu" class="menu" data-aos="fade-in">
 
             <div class="menu-button" id="language-button">
                 <a href="#" onclick="javascript:return false;" title="Alterar Idioma">
@@ -110,7 +114,7 @@
     <main id="content">
 
         <!---------- THEMES GRID [start] -->
-        <section class="main-sections" id="tumblr-themes-section">
+        <section class="main-sections" id="tumblr-themes-section" data-aos="fade-up">
 
             <h1> <span class="l_pt">Temas para Tumblr atuais</span> <span class="l_en">Current Tumblr themes</span> </h1>
 
@@ -178,7 +182,7 @@
 
 
         <!---------- REACT PROJECTS GRID [start] -->
-        <section class="main-sections" id="react-projects-section" style="display:none;">
+        <section class="main-sections" id="react-projects-section" data-aos="fade-up" style="display:none;">
 
             <h1> <span class="l_pt">Outros projetos</span> <span class="l_en">Other Projects</span> </h1>
 
@@ -250,7 +254,7 @@
        
 
         <!---------- OLD THEMES GRID [start] -->
-        <section class="main-sections" id="old-themes-section">
+        <section class="main-sections" id="old-themes-section" data-aos="fade-up">
 
             <h1> <span class="l_pt">Temas para Tumblr antigos</span> <span class="l_en">Old Tumblr themes</span> </h1>
 
@@ -508,7 +512,7 @@ SmoothScroll({
 </script>
 <!-- smooth scroll [end] -->
 
-<!-- tooltips (by: http://manos.malihu.gr/style-my-tooltips-jquery-plugin/) -->
+<!-- tooltips (by: http://manos.malihu.gr/style-my-tooltips-jquery-plugin/) 
 <script src="custom-tooltips.js"></script>
 <script>
 (function($){
@@ -523,5 +527,20 @@ $(document).ready(function(){
 })(jQuery);
 </script>
 <!-- tooltips (by: http://manos.malihu.gr/style-my-tooltips-jquery-plugin/) -->
+
+<!-- Animate on Scroll (https://michalsnik.github.io/) -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 1000, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  anchorPlacement: 'top-center', // defines which position of the element regarding to window should trigger the animation
+});
+</script>
+<!-- Animate on Scroll (https://michalsnik.github.io/) -->
 
 </html>
