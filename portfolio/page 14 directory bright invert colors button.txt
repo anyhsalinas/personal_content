@@ -1030,13 +1030,13 @@ function invertColors(){
         atButtonOri.style.display="inline-block";
         atButtonAlt.style.display="none";
         document.querySelector("body").classList.remove("body-inverter");
-        document.querySelectorAll("#menu, #sidebar, #container, #credit, #cookies-notice, #at_inverter_cores, img, figure, iframe").forEach(function(item){item.classList.remove("inverter");});
+        document.querySelectorAll("#menu, #sidebar, #container, #credit, #cookies-notice, img, figure, iframe").forEach(function(item){item.classList.remove("inverter");});
         document.querySelectorAll("figure img, .photoset figure").forEach(function(item){item.classList.remove("naoinverter");});
     } else {
         atButtonOri.style.display="none";
         atButtonAlt.style.display="inline-block";
         document.querySelector("body").classList.add("body-inverter");
-        document.querySelectorAll("#menu, #sidebar, #container, #credit, #cookies-notice, #at_inverter_cores, img, figure, iframe").forEach(function(item){item.classList.add("inverter");});
+        document.querySelectorAll("#menu, #sidebar, #container, #credit, #cookies-notice, img, figure, iframe").forEach(function(item){item.classList.add("inverter");});
         document.querySelectorAll("figure img, .photoset figure").forEach(function(item){item.classList.add("naoinverter");});
     }; // if
         
