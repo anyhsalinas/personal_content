@@ -1,0 +1,1095 @@
+<html>
+ 
+   <!----
+ 
+    © hunterthemes.tumblr.com | Page #14 - Directory (bright)
+   
+   * Do not redistribute this page and claim it as your own.
+   * Do not remove the credit or move it to another page.
+   * Minor changes to this page are allowed.
+   
+    ---->
+   
+   <!-------- ICON FONTS -------->
+<!-- phosphor icons -->
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css"/>
+
+<!-- GOOGLE FONTS -->
+ 
+<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Nova+Slim' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Rozha+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Almendra" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Baumans' rel='stylesheet' type='text/css'>
+
+<!-- JS Cookies Plugin: -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"></script>
+
+<!-- lineawesome -->
+<link rel="stylesheet" href="//maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+
+
+<style type="text/css">
+ 
+/* CSS */
+ 
+/*-- GENERAL --*/
+ 
+body {
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+color: #222222;
+font-family:Helvetica, Arial, sans-serif;  
+font-size: 12px;
+line-height: 18px;
+background-color: #f6f6f6;
+background-image:url();
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size:cover;
+}
+
+/* Style of the headings (titles) */
+ 
+h1{
+font-family:"Rozha One";
+}
+ 
+h2{
+font-family:Helvetica, Arial, sans-serif;
+font-size: 12px;
+line-height: 13px;
+}
+
+a {
+color: #777777;
+text-decoration: none;
+} 
+ 
+a:hover {
+text-decoration: none;
+color: #f3c0ab;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+ 
+b, strong {color: #f3c0ab;}
+ 
+i, em {color: #afd2c3;}
+
+/* Tumblr controls */
+ 
+iframe.tmblr-iframe {
+top:2px!important;
+right:40px!important;
+opacity:0.8;
+transform:scale(0.6);
+transform-origin:100% 0;
+-webkit-transform:scale(0.8);
+-webkit-transform-origin:100% 0;
+-o-transform:scale(0.8);
+-o-transform-origin:100% 0;
+-moz-transform:scale(0.8);
+-moz-transform-origin:100% 0;
+-ms-transform:scale(0.8);
+-ms-transform-origin:100% 0;
+z-index:100000!important;
+filter:invert(1);
+-webkit-filter:invert(1);
+-o-filter:invert(1);
+-moz-filter:invert(1);
+-ms-filter:invert(1);
+}
+ 
+iframe.tmblr-iframe:hover {
+opacity:1!important;}
+
+/*-- Webkit scrollbar --*/
+
+::-webkit-scrollbar {
+width: 9px;
+height: 0px;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+height: 0px;
+display: block;
+background-color: #fff;
+}
+
+::-webkit-scrollbar-track-piece {
+background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+height: 0px;
+background-color: #ddd;
+border: 4px solid #fff;
+}
+
+/*-- TOOLTIPS --*/
+ 
+#s-m-t-tooltip {
+margin:24px 14px 7px 12px;
+padding: 5px;
+max-width: 250px;
+color: #222;
+background: #fff;
+border: 1px solid #ccc;  
+font-size: 12px;
+line-height: 15px;
+z-index: 100000; 
+}
+
+/* Fix */
+ 
+iframe, img, embed, object, video {
+max-width: 100%;
+border: none;
+}
+ 
+input, textarea, select, a { outline: none; }
+
+/*------ MENU -----*/ 
+
+#menu{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:45px;
+background:#fff;
+border-bottom:1px solid #eee;
+z-index:100;
+}
+
+/* Blog title */
+ 
+#blogtitle{
+margin-top:0px;
+margin-left:200px;
+width:210px;
+font-family:"Rozha One";
+font-size:25px;
+line-height:45px;
+color:#222222;
+letter-spacing:1px;
+text-align:center;
+z-index:10000;
+}
+
+/*------ SIDEBAR -----*/
+
+#sidebar{
+position:fixed;
+top:0;
+left:0;
+width:230px;
+height:100%;
+background:#fff;
+border-right:1px solid #eee;
+z-index:100;
+}
+
+.triangle1{
+position:absolute;
+margin:0;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 230px 200px 0;
+/* triangle background */
+border-color:transparent #f3c0ab transparent transparent;
+z-index:1;
+}
+
+#avatar{
+position:absolute;
+margin-top:65px;
+margin-left:60px;
+width:100px;
+height:100px;
+border:2px solid #afd2c3;
+border-radius:100%;
+z-index:10;
+overflow:hidden;
+}
+
+#avatar img{
+width:100%;
+height:100%;
+border-radius:100%;
+}
+
+#avatar img:hover {
+-webkit-transition: all .7s ease;
+-moz-transition: all .7s  ease;
+-o-transition: all .7s  ease;
+transition: all .7s  ease;
+-ms-transform: scale(1.2);
+-webkit-transform: scale(1.2);
+-moz-transform: scale(1.2);
+transform: scale(1.2);
+}
+
+/*-- Main icons --*/
+ 
+#mainicons{
+position:absolute;
+margin-left:40px;
+bottom:10px;
+width:150px;
+height:20px;
+padding-top:10px;
+border-top:1px solid #ddd;
+text-align:center;
+}
+
+/* Main icons */
+ 
+#mainicons span{
+margin-top:10px;
+margin-left:5px;
+margin-right:5px;
+width:20px;
+height:25px;
+font-size:17px;
+text-align:center;
+color:#f3c0ab;
+}
+ 
+#mainicons span:hover{
+color:#afd2c3;
+-webkit-transition: all .7s ease;
+-moz-transition: all .7s  ease;
+-o-transition: all .7s  ease;
+transition: all .7s  ease;
+}
+
+/* -------- SORTING CONTENT ------- */
+ 
+/* Sort box style */
+ 
+#sorting{
+margin-top:190px;
+margin-left:30px;
+width:170px;
+max-height: -moz-calc(100% - 250px);
+max-height: -webkit-calc(100% - 250px);
+max-height: -o-calc(100% - 250px);
+max-height: calc(100% - 250px);
+overflow-y:auto;
+}
+ 
+#sorting ul {
+margin:0px;
+width:170px;
+padding:0px;
+list-style: none;
+}
+ 
+/* Sorting titles */
+ 
+#titleone, #titletwo, #titlethree{
+margin-bottom:15px;
+height:25px;
+line-height:30px;
+font-size:15px;
+color:#222222;
+cursor:pointer;
+text-align:center;
+}
+
+.sdivider{
+margin:auto;
+width:30px;
+height:3px;
+background:#afd2c3;
+}
+
+#titleone:hover, #titletwo:hover, #titlethree:hover{
+color:#f3c0ab;
+}
+
+#titleone:hover .tdivider, #titletwo:hover .tdivider, #titlethree:hover .tdivider{
+width:70px;
+}
+
+#linkboxone, #linkboxtwo, #linkboxthree{
+display:none;
+}
+
+/* Sorting links */
+ 
+#sorting a {
+display:block;
+margin-left:15px;
+width:125px;
+padding:5px;
+color:#777777;
+font-size:12px;
+text-align:center;
+}
+
+#sorting li a.selected {
+color:#f3c0ab;
+}
+ 
+#sorting a:hover {
+color:#f3c0ab;
+}
+ 
+/*------ CONTAINER -----*/
+
+#container{
+margin-left:250px;
+top:60px;
+width: -moz-calc(100% - 250px);
+width: -webkit-calc(100% - 250px);
+width: -o-calc(100% - 250px);
+width:: calc(100% - 250px);
+height:auto;
+z-index:10;
+}
+
+/* Entries */
+
+.story{
+width:230px;
+margin:15px;
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;  
+}
+ 
+/* Entries */
+ 
+#entry{
+width:250px;
+height:auto;
+font-size:12px;
+background:#fff;
+border:1px solid #eee;
+}
+
+/* Images */
+ 
+#entry img{
+width:250px;
+height:auto;
+}
+
+/* Titles */
+
+#entry h1{
+color: #000;
+margin:0;
+font-family:"Rozha One";
+font-size: 20px;
+line-height: 20px;
+padding:10px;
+background:#fff;
+}
+
+/* Title divider */
+
+.tdivider{
+margin-left:10px;
+width:50px;
+height:3px;
+background:#f3c0ab;
+}
+
+/* Info */
+ 
+.info{
+margin-top:0px;
+margin-left:-1px;
+width:230px;
+max-height:230px;
+overflow-y:auto;
+padding:10px;
+color:#777777;
+font-size:12px;
+line-height:18px;
+text-align:justify;
+}
+
+.info-text{
+max-height:200px;  
+overflow-y:auto;
+}
+
+#entry:hover{
+border:1px solid #cccccc;
+-moz-transition-duration:1s;
+-webkit-transition-duration:1s;
+-o-transition-duration:1s;  
+}
+
+.etags{
+margin-top:10px;
+border-top:1px solid #eee;
+padding-top:5px;
+color:#afd2c3;
+}
+
+.etags b{
+color:#f3c0ab;
+}
+ 
+/*-- PAGE CREDIT --*/
+ 
+#credit {
+position:fixed;
+right:10px;
+top:8px;
+width:30px;
+z-index:10000;
+}
+ 
+/* END CSS */
+ 
+{CustomCSS}
+
+
+/** INVERT COLORS (by http://anyhs-themes.tumblr.com) **/
+#at_inverter_cores {
+    cursor: pointer;
+    background: #222222;
+    color: #eeeeee;
+    padding: 7px 5px 7px 7px;
+    border-radius: 3px;
+    margin: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 10px;
+    width: 16px;
+    transition: .5s;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 99999;
+}
+
+.inverter { filter: invert(1) !important; -webkit-filter: invert(1) !important; }
+.naoinverter { filter: invert(0) !important; -webkit-filter: invert(0) !important; }
+
+body.body-inverter {background: #222222;}
+
+body.body-inverter::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment {background-color: #000;}
+body.body-inverter::-webkit-scrollbar-track-piece {background-color: #000;}
+body.body-inverter::-webkit-scrollbar-thumb:vertical {
+background-color: #222;
+border-color: #000;
+}
+
+#at_inverter_cores:hover {
+    width: 150px;
+}
+
+#at_inverter_cores .button-title i, #at_inverter_cores .button-title u {
+    display: inline-block;
+}
+#at_inverter_cores .button-title i {
+}
+#at_inverter_cores .button-title u {
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+#at_inverter_cores .button-title.alt {display: none;}
+
+
+/***** COOKIES NOTICE *****/
+#cookies-notice {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 200px;
+    padding: 20px;
+    z-index: 9999999999999;
+    font-size: 14px;
+    line-height: 16px;
+    display: table;
+    background: #222222;
+    color: #eeeeee;
+    border-radius: 5px;
+    border: 1px solid #eeeeee;
+}
+
+
+#cookies-notice p {
+    margin: 0px !important;
+    padding: 0px;
+}
+
+#cookies-notice a {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.cookies-notice-button {
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    transition: .5s;
+    background: #eee;
+    color: #222;
+    border-radius: 5px;
+    margin-top: 15px;
+    border: 1px solid #eee;
+}
+.cookies-notice-button:hover {
+    background: #222;
+    color: #eee;
+}
+
+/** INVERT COLORS (by http://anyhs-themes.tumblr.com) **/
+ 
+</style>
+
+</head>
+ 
+<meta charset="utf-8">
+<title>{Title}</title>
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+<!-- HTML -->
+ 
+<body>
+
+
+<!---------- COOKIES NOTICE: ---------->
+<div id="cookies-notice">
+    <p> 
+        <i class="las la-cookie-bite"></i> This blog collects cookies to deliver better user experience.
+        <br>
+        <a href="https://plumsiebob.com/policy-disclaimer"><u>Privacy Policy</u></a>
+    </p>
+    
+    <div class="cookies-notice-button">Tasty Cookies!</div>
+</div><!-- .cookies-notice -->
+<!---------- COOKIES NOTICE [end] ---------->
+
+
+<div id="menu">
+<div id="blogtitle">ACL</div> 
+</div>
+<!--End menu-->
+
+<div id="sidebar">
+
+<!---- INVERT COLORS (by http://anyhs-themes.tumblr.com) ---->
+<div id="at_inverter_cores" href="#" onclick="return false;">
+    <span class="button-title ori">
+        <i class="las la-moon"></i> <u>Toggle Dark Mode</u>
+    </span>
+    <span class="button-title alt">
+        <i class="las la-sun"></i> <u>Toggle Light Mode</u>
+    </span>
+</div><!-- #at_inverter_cores -->
+<!---- INVERT COLORS (by http://anyhs-themes.tumblr.com) ---->
+
+<div class="triangle1"></div>
+
+<div id="avatar"><img src="https://i.imgur.com/76fENAU.jpg"></div>
+
+<div id="mainicons">
+<a href="/" title="Main Blog"><span class="ph-bold ph ph-house"></span></a>
+<a href="/contact" title="Ask"><span class="ph-bold ph ph-envelope-simple"></span></a>
+<a href="/submit-form" title="Submit"><span class="ph-bold ph ph-paperclip"></span></a>
+<a href="/archive" title="Archive"><span class="ph-bold ph ph-clock"></span></a>
+</div>
+<!--End mainicons-->
+
+<!-- These are the filter links. Don't change ".story" tag because it refreshes the page -->
+ 
+<div id="sorting">
+ 
+<ul id="filters" class="option-set clearfix" data-option-key="filter">
+   
+<!-- Replace .tag1, .tag2 etc with names of the tags that you want to add -->
+   
+<div id="titletwo"> Generation <div class="sdivider"></div></div>
+<div id="linkboxtwo">
+<li><a href="#filter" data-option-filter=".1"> Gen 1 </a></li>
+<li><a href="#filter" data-option-filter=".2"> Gen 2 </a></li>
+<li><a href="#filter" data-option-filter=".3"> Gen 3 </a></li>
+<li><a href="#filter" data-option-filter=".4"> Gen 4 </a></li>
+<li><a href="#filter" data-option-filter=".5"> Gen 5 </a></li>
+<li><a href="#filter" data-option-filter=".6"> Gen 6 </a></li>
+<li><a href="#filter" data-option-filter=".7"> Gen 7 </a></li>
+<li><a href="#filter" data-option-filter=".8"> Gen 8 </a></li>
+<li><a href="#filter" data-option-filter=".9"> Gen 9 </a></li>
+<li><a href="#filter" data-option-filter=".10"> Gen 10 </a></li>
+</div>
+<!--End linkboxone-->
+
+<div id="titleone"> Gender <div class="sdivider"></div></div>
+<div id="linkboxone">
+<li><a href="#filter" data-option-filter=".m"> Male </a></li>
+<li><a href="#filter" data-option-filter=".f"> Female </a></li>
+<li><a href="#filter" data-option-filter=".nb"> Non-binary </a></li>
+<li><a href="#filter" data-option-filter=".trans"> Trans </a></li>
+</div>
+<!--End linkboxtwo-->
+   
+<div id="titlethree"> Status <div class="sdivider"></div></div>
+<div id="linkboxthree">
+<li><a href="#filter" data-option-filter=".founder"> Founder </a></li>
+<li><a href="#filter" data-option-filter=".heir"> Heirs </a></li>
+<li><a href="#filter" data-option-filter=".spare"> Spares </a></li>
+<li><a href="#filter" data-option-filter=".spouse"> Spouses </a></li>
+<li><a href="#filter" data-option-filter=".partner"> Partners </a></li> 
+</div>
+<!--End linkboxthree-->
+
+<li><a href="#filter" data-option-filter=".story"> All tags </a></li>
+   
+</ul>
+</div>
+<!--End sorting-->
+</div>
+<!--End sidebar-->
+
+<!-- Container -->
+<div id="container" class="clearfix">
+ 
+<!--- Replace tag1, tag2 etc. with the tags you've previously chosen and added to filter links
+
+--->
+ 
+<div id="entry" class="story tag1 tag2">
+<!--You can insert image here-->
+<img src="https://68.media.tumblr.com/10b29c807491889b42dedaa008dcbcbe/tumblr_owc6s1Bs8Y1uo5urho3_r1_400.png"></a>
+<h1>Title</h1>
+<div class="tdivider"></div>
+<div class="info">
+
+<div class="info-text">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. 
+</div>
+<!--End info-text-->
+
+<div class="etags">
+<b> label </b> <br>
+#tag, #tag, #tag
+</div>
+<!--End etags -->
+
+</div>
+<!--End info-->
+</div>
+<!--End entry-->
+ 
+<div id="entry" class="story tag2 tag3">
+<!--You can insert image here-->
+<img src="https://68.media.tumblr.com/10b29c807491889b42dedaa008dcbcbe/tumblr_owc6s1Bs8Y1uo5urho3_r1_400.png"></a>
+<h1>Title</h1>
+<div class="tdivider"></div>
+<div class="info">
+
+<div class="info-text">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. 
+</div>
+<!--End info-text-->
+
+<div class="etags">
+<b> label </b> <br>
+#tag, #tag, #tag
+</div>
+<!--End etags -->
+
+</div>
+<!--End info-->
+</div>
+<!--End entry-->
+ 
+<div id="entry" class="story tag3 tag4">
+<!--You can insert image here-->
+<img src="https://68.media.tumblr.com/10b29c807491889b42dedaa008dcbcbe/tumblr_owc6s1Bs8Y1uo5urho3_r1_400.png"></a>
+<h1>Title</h1>
+<div class="tdivider"></div>
+<div class="info">
+
+<div class="info-text">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. 
+</div>
+<!--End info-text-->
+
+<div class="etags">
+<b> label </b> <br>
+#tag, #tag, #tag
+</div>
+<!--End etags -->
+
+</div>
+<!--End info-->
+</div>
+<!--End entry-->
+
+<div id="entry" class="story tag4 tag5">
+<!--You can insert image here-->
+<img src="https://68.media.tumblr.com/10b29c807491889b42dedaa008dcbcbe/tumblr_owc6s1Bs8Y1uo5urho3_r1_400.png"></a>
+<h1>Title</h1>
+<div class="tdivider"></div>
+<div class="info">
+
+<div class="info-text">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. 
+</div>
+<!--End info-text-->
+
+<div class="etags">
+<b> label </b> <br>
+#tag, #tag, #tag
+</div>
+<!--End etags -->
+
+</div>
+<!--End info-->
+</div>
+<!--End entry-->
+ 
+<div id="entry" class="story tag5 tag6">
+<!--You can insert image here-->
+<img src="https://68.media.tumblr.com/10b29c807491889b42dedaa008dcbcbe/tumblr_owc6s1Bs8Y1uo5urho3_r1_400.png"></a>
+<h1>Title</h1>
+<div class="tdivider"></div>
+<div class="info">
+
+<div class="info-text">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. 
+</div>
+<!--End info-text-->
+
+<div class="etags">
+<b> label </b> <br>
+#tag, #tag, #tag
+</div>
+<!--End etags -->
+
+</div>
+<!--End info-->
+</div>
+<!--End entry-->
+ 
+<div id="entry" class="story tag1 tag2 tag3">
+<!--You can insert image here-->
+<img src="https://68.media.tumblr.com/10b29c807491889b42dedaa008dcbcbe/tumblr_owc6s1Bs8Y1uo5urho3_r1_400.png"></a>
+<h1>Title</h1>
+<div class="tdivider"></div>
+<div class="info">
+
+<div class="info-text">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. 
+</div>
+<!--End info-text-->
+
+<div class="etags">
+<b> label </b> <br>
+#tag, #tag, #tag
+</div>
+<!--End etags -->
+
+</div>
+<!--End info-->
+</div>
+<!--End entry-->
+
+<div id="entry" class="story tag4 tag5 tag6">
+<!--You can insert image here-->
+<img src="https://68.media.tumblr.com/10b29c807491889b42dedaa008dcbcbe/tumblr_owc6s1Bs8Y1uo5urho3_r1_400.png"></a>
+<h1>Title</h1>
+<div class="tdivider"></div>
+<div class="info">
+
+<div class="info-text">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. 
+</div>
+<!--End info-text-->
+
+<div class="etags">
+<b> label </b> <br>
+#tag, #tag, #tag
+</div>
+<!--End etags -->
+
+</div>
+<!--End info-->
+</div>
+<!--End entry-->
+ 
+<div id="entry" class="story tag1 tag2">
+<!--You can insert image here-->
+<img src="https://68.media.tumblr.com/10b29c807491889b42dedaa008dcbcbe/tumblr_owc6s1Bs8Y1uo5urho3_r1_400.png"></a>
+<h1>Title</h1>
+<div class="tdivider"></div>
+<div class="info">
+
+<div class="info-text">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. 
+</div>
+<!--End info-text-->
+
+<div class="etags">
+<b> label </b> <br>
+#tag, #tag, #tag
+</div>
+<!--End etags -->
+
+</div>
+<!--End info-->
+</div>
+<!--End entry-->
+ 
+<div id="entry" class="story tag1 tag2 tag3">
+<!--You can insert image here-->
+<img src="https://68.media.tumblr.com/10b29c807491889b42dedaa008dcbcbe/tumblr_owc6s1Bs8Y1uo5urho3_r1_400.png"></a>
+<h1>Title</h1>
+<div class="tdivider"></div>
+<div class="info">
+
+<div class="info-text">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. 
+</div>
+<!--End info-text-->
+
+<div class="etags">
+<b> label </b> <br>
+#tag, #tag, #tag
+</div>
+<!--End etags -->
+
+</div>
+<!--End info-->
+</div>
+<!--End entry-->
+ 
+ 
+<!---- To insert more entries just copy/paste the following:
+ 
+<div id="entry" class="story tag1 tag2 tag3">
+<img src="https://68.media.tumblr.com/10b29c807491889b42dedaa008dcbcbe/tumblr_owc6s1Bs8Y1uo5urho3_r1_400.png"></a>
+<h1>Title</h1>
+<div class="tdivider"></div>
+<div class="info">
+
+<div class="info-text">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. 
+</div>
+
+<div class="etags">
+<b> label </b> <br>
+#tag, #tag, #tag
+</div>
+
+</div>
+</div>
+ 
+---->
+ 
+</div>
+<!--End container-->
+   
+<!-- CREDIT (DO NOT REMOVE) -->
+<div id="credit"><a href="https://www.hunterthemes.tumblr.com">
+<img src="https://66.media.tumblr.com/b29d8873c09628252057b9408a7c4a88/tumblr_plbuq65td51uo5urho1_100.png" title="theme by hunter themes"></a></div>
+
+</body>
+
+<!---------- SCRIPTS ---------->
+ 
+<!-- Saturnicons script -->
+
+<link href="//dl.dropbox.com/s/50g6fbds3rh4m0j/saturnicons.css" rel="stylesheet">
+
+<!-- Jquery -->
+ 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ 
+<!-- Style my tooltips script -->
+ 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="jquery.style-my-tooltips.js"></script>
+ 
+<script type="text/javascript" src="http://static.tumblr.com/imovwvl/dJWl20ley/jqueryformasonry.js"></script>
+ 
+<script src="http://static.tumblr.com/rzl30kg/eAxm7a751/jquery.style-my-tooltips.js"></script>
+<script>
+(function($){
+$(document).ready(function(){
+$("[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:200,
+tip_fade_speed: 300
+}
+);
+});
+})(jQuery);
+</script>
+
+<!-- Filter scripts -->
+ 
+<script src="http://static.tumblr.com/fuu6t9w/kh8ml0pl9/jquery-1.7.1.min.js"></script>
+<script src="http://static.tumblr.com/fuu6t9w/eubml0pm0/jquery.isotope.min.js"></script>
+ 
+<script>
+$(function(){
+var $container = $('#container');
+ 
+$container.isotope({
+itemSelector : '.story'
+});
+ 
+var $optionSets = $('#sorting .option-set'),
+$optionLinks = $optionSets.find('a');
+ 
+$optionLinks.click(function(){
+var $this = $(this);
+// don't proceed if already selected
+if ( $this.hasClass('selected') ) {
+return false;
+}
+
+var $optionSet = $this.parents('.option-set');
+$optionSet.find('.selected').removeClass('selected');
+$this.addClass('selected');
+ 
+// make option object dynamically, i.e. { filter: '.my-filter-class' }
+var options = {},
+key = $optionSet.attr('data-option-key'),
+value = $this.attr('data-option-filter');
+// parse 'false' as false boolean
+value = value === 'false' ? false : value;
+options[ key ] = value;
+if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+// changes in layout modes need extra logic
+changeLayoutMode( $this, options )
+} else {
+// otherwise, apply new options
+$container.isotope( options );
+}
+ 
+return false;
+});
+ 
+});
+</script>
+ 
+<!-- Hide/show on click -->
+ 
+<script>
+$(document).ready(function(){
+
+$("#titleone").click(function(){
+$("#linkboxone").slideToggle(300);
+});
+ 
+$("#titletwo").click(function(){
+$("#linkboxtwo").slideToggle(300);
+});
+ 
+$("#titlethree").click(function(){
+$("#linkboxthree").slideToggle(300);
+ });
+ 
+});
+</script>
+
+
+<!-- INVERT COLORS (by http://anyhs-themes.tumblr.com) -->
+<script>
+/** variables: **/
+let atInvrtBtt = document.querySelector("#at_inverter_cores");
+let atButtonOri = document.querySelector("#at_inverter_cores .button-title.ori");
+let atButtonAlt = document.querySelector("#at_inverter_cores .button-title.alt");
+var colorModeCookie;
+
+if(!location.hostname.startsWith("assets.txmblr")) {
+        colorModeCookie = Cookies.get('themeColorMode');
+} else {
+        colorModeCookie = 0;
+}; // if
+    
+/** invert colors function: **/
+function invertColors(){
+
+    if(colorModeCookie == 0) {
+        atButtonOri.style.display="inline-block";
+        atButtonAlt.style.display="none";
+        document.querySelector("body").classList.remove("body-inverter");
+        document.querySelectorAll("#menu, #sidebar, #container, #credit, #cookies-notice, #at_inverter_cores, img, figure, iframe").forEach(function(item){item.classList.remove("inverter");});
+        document.querySelectorAll("figure img, .photoset figure").forEach(function(item){item.classList.remove("naoinverter");});
+    } else {
+        atButtonOri.style.display="none";
+        atButtonAlt.style.display="inline-block";
+        document.querySelector("body").classList.add("body-inverter");
+        document.querySelectorAll("#menu, #sidebar, #container, #credit, #cookies-notice, #at_inverter_cores, img, figure, iframe").forEach(function(item){item.classList.add("inverter");});
+        document.querySelectorAll("figure img, .photoset figure").forEach(function(item){item.classList.add("naoinverter");});
+    }; // if
+        
+}; invertColors();
+
+/** button on click: **/
+atInvrtBtt.onclick = function(){
+    
+    /** switch cookie value **/
+    if(!location.hostname.startsWith("assets.txmblr")) {
+        if(colorModeCookie == 0) {
+            Cookies.set('themeColorMode', '1', {expires: 180, sameSite: 'strict'});
+            colorModeCookie = Cookies.get('themeColorMode');
+        } else {
+            Cookies.set('themeColorMode', '0', {expires: 180, sameSite: 'strict'});
+            colorModeCookie = Cookies.get('themeColorMode');
+        }; // if
+    } else {
+        if(colorModeCookie == 0) {
+            colorModeCookie = 1;
+        } else {
+            colorModeCookie = 0;
+        }; // if
+    }; // if
+    
+    /** invert colors: **/
+    invertColors();
+    
+}; // onclick
+
+/** cookies message: **/
+var cookiesConsent = 0;
+    
+// if not on Tumblr's Preview:
+if(!location.hostname.startsWith("assets.txmblr")) {
+    cookiesConsent = Cookies.get('at1cookiesConsent');
+}; // if
+    
+function checkCookiesConsent() {
+    if(cookiesConsent) {document.querySelector("#cookies-notice").style.display="none"};
+}; checkCookiesConsent();
+document.querySelector(".cookies-notice-button").onclick = function() {
+    // if not on Tumblr's Preview:
+    if(!location.hostname.startsWith("assets.txmblr")) {
+        Cookies.set('at1cookiesConsent', '1', {expires: 180, sameSite: 'strict'});
+        cookiesConsent = Cookies.get('at1cookiesConsent');
+    } else {cookiesConsent = 1;}; // if
+    
+    checkCookiesConsent();
+}; // onclick
+</script>
+<!-- INVERT COLORS (by http://anyhs-themes.tumblr.com) -->
+
+</html>
+ 
+<!-- END HTML -->
