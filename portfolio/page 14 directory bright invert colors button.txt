@@ -28,6 +28,8 @@
 <!-- lineawesome -->
 <link rel="stylesheet" href="//maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
+<!-- Images Loaded (imagesloaded.desandro.com): -->
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 
 
 <style type="text/css">
@@ -1011,6 +1013,9 @@ $("#linkboxthree").slideToggle(300);
 
 <!-- INVERT COLORS (by http://anyhs-themes.tumblr.com) -->
 <script>
+imagesLoaded(document.querySelector('body'), function() {
+
+
 /** variables: **/
 let atInvrtBtt = document.querySelector("#at_inverter_cores");
 let atButtonOri = document.querySelector("#at_inverter_cores .button-title.ori");
@@ -1087,6 +1092,8 @@ document.querySelector(".cookies-notice-button").onclick = function() {
     
     checkCookiesConsent();
 }; // onclick
+
+}); // imagesloaded
 </script>
 <!-- INVERT COLORS (by http://anyhs-themes.tumblr.com) -->
 
