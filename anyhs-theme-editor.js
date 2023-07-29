@@ -1,6 +1,9 @@
-alert("{color:Background}");
+//alert("{color:Background}");
 
-    document.querySelector("#sla button").onclick=function(){
+var uConfigs = document.querySelector("#uConfigs").value;
+alert(uConfigs);
+
+    document.querySelector("#render-custom-theme").onclick=function(){
         var xhttp = new XMLHttpRequest();
         xhttp.onload = function() {
             let code = xhttp.responseText;
