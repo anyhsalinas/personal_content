@@ -1,4 +1,4 @@
-document.querySelector("div").style.border="2px solid red";
+document.querySelector("div").style.border="2px solid blue";
 
 $(document).ready(function(){
   $("div").load("post1.html", function(responseTxt, statusTxt, xhr){
@@ -9,4 +9,4 @@ $(document).ready(function(){
   });
 });
 
-alert("yeah");
+//alert("yeah");
