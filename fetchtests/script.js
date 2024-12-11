@@ -1,5 +1,3 @@
-alert("hi");
-
 document.querySelector("div").style.border="2px solid red";
 
 
@@ -9,3 +7,5 @@ document.querySelector("div").style.border="2px solid red";
     if(statusTxt == "error")
       alert("Error: " + xhr.status + ": " + xhr.statusText);
   });
+
+alert("hi");
